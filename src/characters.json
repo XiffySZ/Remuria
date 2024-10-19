@@ -1,0 +1,135 @@
+[
+  {
+    "tier": "T0",
+    "mainDPS": [
+      { "image": "images/alhaitham.png" },
+      { "image": "images/neuvilette.png" },
+      { "image": "images/arlleccino.png" }
+    ],
+    "subDPS": [
+      { "image": "images/emilie.png" },
+      { "image": "images/furina.png" },
+      { "image": "images/yelan.png" },
+      { "image": "images/xingqiu.png" },
+      { "image": "images/fischl.png" }
+    ],
+    "amplifiers": [
+      { "image": "images/bennett.png" },
+      { "image": "images/xilonen.png" },
+      { "image": "images/kazuha.png" }
+    ],
+    "sustain": [
+      { "image": "images/zhongli.png" },
+      { "image": "images/kokomi.png" }
+    ]
+  },
+  {
+    "tier": "T0.5",
+    "mainDPS": [
+      { "image": "images/hutao.png" },
+      { "image": "images/navia.png" },
+      { "image": "images/mualani.png" },
+      { "image": "images/kinich.png" }
+    ],
+    "subDPS": [
+      { "image": "images/xiangling.png" },
+      { "image": "images/raiden.png" }
+    ],
+    "amplifiers": [
+      { "image": "images/sucrose.png" },
+      { "image": "images/nahida.png" }
+    ],
+    "sustain": [
+      { "image": "images/baizhu.png" }
+      
+    ] 
+  },
+  {
+    "tier": "T1",
+    "mainDPS": [
+      { "image": "/images/clorinde.png" },
+      { "image": "images/lyney.png" },
+      { "image": "images/xiao.png" },
+      { "image": "images/nilou.png" },
+      { "image": "images/yoimiya.png" },
+      { "image": "images/gaming.png" }
+    ],
+    "subDPS": [
+      { "image": "/images/yae miko.png" }
+    ],
+    "amplifiers": [
+      { "image": "/images/xianyun.png" }
+    ],
+    "sustain": [
+      { "image": "images/kuki.png" },
+      { "image": "/images/jean.png" }
+    ] 
+  },
+  {
+    "tier": "T2",
+    "mainDPS": [
+      { "image": "/images/wrio.png" },
+      { "image": "images/itto.png" },
+      { "image": "images/keqing.png" },
+      { "image": "images/tighnari.png" },
+      { "image": "images/tartaglia.png" },
+      { "image": "images/wanderer.png" },
+      { "image": "images/yanfei.png" },
+      { "image": "images/cyno.png" }
+    ],
+    "subDPS": [
+      { "image": "/images/beidou.png" }
+    ],
+    "amplifiers": [
+      { "image": "/images/collei.png" }
+    ],
+    "sustain": [] 
+  },
+  {
+    "tier": "T3",
+    "mainDPS": [
+      { "image": "/images/ayaka.png" },
+      { "image": "images/ganyu.png" },
+      { "image": "images/heizou.png" },
+      { "image": "images/sethos.png" }
+    ],
+    "subDPS": [
+      { "image": "/images/kayea.png" }
+    ],
+    "amplifiers": [
+      { "image": "/images/kachina.png" }
+    ],
+    "sustain": [] 
+  },
+  {
+    "tier": "T4",
+    "mainDPS": [
+      { "image": "/images/eula.png" },
+      { "image": "images/ninnguang.png" },
+      { "image": "images/klee.png" },
+      { "image": "images/noelle.png" },
+      { "image": "images/razor.png" }
+    ],
+    "subDPS": [
+      { "image": "/images/chongyun.png" }
+    ],
+    "amplifiers": [
+      { "image": "/images/barbara.png" }
+    ],
+    "sustain": [] 
+  },
+  {
+      "tier": "T5",
+      "mainDPS": [
+        { "image": "/images/amber.png" },
+        { "image": "images/freminet.png" },
+        { "image": "images/xinyan.png" }
+      ],
+      "subDPS": [
+      ],
+      "amplifiers": [
+      ],
+      "sustain": [
+      ]
+  }
+]

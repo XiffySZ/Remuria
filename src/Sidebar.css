@@ -1,0 +1,78 @@
+/* Sidebar styles */
+.sidebar {
+  width: 250px; /* Width of the sidebar */
+  background-color: #2a2a33; /* Sidebar background color */
+  color: #d0bc91;
+  height: 335vh; /* Full height */
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease; /* Transition for collapsing */
+}
+
+/* Collapse styles */
+.sidebar.collapsed {
+  width: 100px; /* Collapsed width */
+}
+
+/* Collapse button styles */
+.collapse-btn {
+  background-color: #444;
+  border: none;
+  color: #d0bc91;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Sidebar list styles */
+.sidebar-list {
+  list-style: none;
+  padding: 0px;
+}
+
+/* Sidebar item styles */
+.sidebar-item {
+  padding: 10px 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  display: flex; /* Flex to align icon and text */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Align items to start (left) */
+}
+
+/* Hide text when sidebar is collapsed */
+.sidebar.collapsed .sidebar-item span {
+  display: none; /* Hide text span when collapsed */
+}
+
+/* Anchor link styles */
+.sidebar-item a {
+  color: #d0bc91;
+  text-decoration: none;
+  flex-grow: 1; /* Ensure text takes available space */
+}
+
+/* Collapsed state adjustments */
+.sidebar.collapsed .sidebar-item {
+  justify-content: center; /* Center icon in collapsed state */
+}
+
+/* Center icons and text when expanded */
+.sidebar-item span {
+  margin-left: 8px; /* Add space between icon and text */
+}
+
+/* Optionally reduce padding in collapsed state */
+.sidebar.collapsed .sidebar-item {
+  padding: 15px 5px;
+}
+
+/* Hover effects for items */
+.sidebar-item:hover {
+  text-decoration: underline;
+}
+
+/* Icon styles */
+.sidebar-item svg {
+  width: 20px; /* Adjust icon size as needed */
+  height: 20px; /* Adjust icon size as needed */
+}
