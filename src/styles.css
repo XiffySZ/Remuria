@@ -149,7 +149,7 @@ body {
   padding: 3px; /* Original padding */
   width: 50px; /* Original width for proper card size */
   height: 50px; /* Ensure uniform height for all cards */
-  text-align: left;
+  text-align: center;
   margin-bottom: 50px; /* Add vertical margin */
 }
 
@@ -160,7 +160,7 @@ body {
 
 .character-image {
   width: 100%; /* Original width */
-  height: 100%; /* Original height */
+  height: auto; /* Original height */
   object-fit: contain;
   filter: contrast(90%) brightness(105%);
 }
@@ -199,3 +199,22 @@ body {
   text-align: center;
   font-size: 24px;   
 }
+
+.tags {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 5px 0; /* Add some margin for spacing */
+}
+
+.tags li {
+  padding: 0; /* No padding around the tag text */
+  margin: 2px 0; /* Space between tags, adjusted to vertical spacing */
+  color: white; /* Text color for tags */
+  font-size: 10px; /* Adjust font size for tags */
+  text-align: center; /* Center align text for better presentation */
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+

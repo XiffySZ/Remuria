@@ -1,12 +1,17 @@
+// CharacterCard.jsx
 import React from 'react';
-//import './CharacterCard.css';
 
-const CharacterCard = ({ image }) => {
+const CharacterCard = ({ image, tags }) => {
   return (
-    <div className="character-list">
     <div className="character-card">
       <img src={image} alt="Character" className="character-image" />
-    </div>
+      {tags && tags.length > 0 && (
+        <ul className="tags">
+          {tags.map((tag, index) => (
+            <li key={index}>{tag}</li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };

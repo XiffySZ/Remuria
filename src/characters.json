@@ -2,134 +2,130 @@
   {
     "tier": "T0",
     "mainDPS": [
-      { "image": "images/alhaitham.png" },
-      { "image": "images/neuvilette.png" },
-      { "image": "images/arlleccino.png" }
+      { "image": "images/alhaitham.png", "tags": [] },
+      { "image": "images/neuvilette.png", "tags": [] },
+      { "image": "images/arlleccino.png", "tags": [] }
     ],
     "subDPS": [
-      { "image": "images/emilie.png" },
-      { "image": "images/furina.png" },
-      { "image": "images/yelan.png" },
-      { "image": "images/xingqiu.png" },
-      { "image": "images/fischl.png" }
+      { "image": "images/emilie.png", "tags": [] },
+      { "image": "images/furina.png", "tags": [] },
+      { "image": "images/yelan.png", "tags": [] },
+      { "image": "images/xingqiu.png", "tags": [] },
+      { "image": "images/fischl.png", "tags": [] }
     ],
     "amplifiers": [
-      { "image": "images/bennett.png" },
-      { "image": "images/xilonen.png" },
-      { "image": "images/kazuha.png" }
+      { "image": "images/bennett.png", "tags": [] },
+      { "image": "images/xilonen.png", "tags": [] },
+      { "image": "images/kazuha.png", "tags": [] }
     ],
     "sustain": [
-      { "image": "images/zhongli.png" },
-      { "image": "images/kokomi.png" }
+      { "image": "images/zhongli.png", "tags": [] },
+      { "image": "images/kokomi.png", "tags": [] }
     ]
   },
   {
     "tier": "T0.5",
     "mainDPS": [
-      { "image": "images/hutao.png" },
-      { "image": "images/navia.png" },
-      { "image": "images/mualani.png" },
-      { "image": "images/kinich.png" }
+      { "image": "images/hutao.png", "tags": [] },
+      { "image": "images/navia.png", "tags": [] },
+      { "image": "images/mualani.png", "tags": [] },
+      { "image": "images/kinich.png", "tags": [] }
     ],
     "subDPS": [
-      { "image": "images/xiangling.png" },
-      { "image": "images/raiden.png" }
+      { "image": "images/xiangling.png", "tags": [] },
+      { "image": "images/raiden.png", "tags": [] }
     ],
     "amplifiers": [
-      { "image": "images/sucrose.png" },
-      { "image": "images/nahida.png" }
+      { "image": "images/sucrose.png", "tags": [] },
+      { "image": "images/nahida.png", "tags": [] }
     ],
     "sustain": [
-      { "image": "images/baizhu.png" }
-      
-    ] 
+      { "image": "images/baizhu.png", "tags": [] }
+    ]
   },
   {
     "tier": "T1",
     "mainDPS": [
-      { "image": "/images/clorinde.png" },
-      { "image": "images/lyney.png" },
-      { "image": "images/xiao.png" },
-      { "image": "images/nilou.png" },
-      { "image": "images/yoimiya.png" },
-      { "image": "images/gaming.png" }
+      { "image": "/images/clorinde.png", "tags": [] },
+      { "image": "images/lyney.png", "tags": [] },
+      { "image": "images/xiao.png", "tags": [] },
+      { "image": "images/nilou.png", "tags": [] },
+      { "image": "images/yoimiya.png", "tags": [] },
+      { "image": "images/gaming.png", "tags": [] }
     ],
     "subDPS": [
-      { "image": "/images/yae miko.png" }
+      { "image": "/images/yae miko.png", "tags": [] }
     ],
     "amplifiers": [
-      { "image": "/images/xianyun.png" }
+      { "image": "/images/xianyun.png", "tags": [] }
     ],
     "sustain": [
-      { "image": "images/kuki.png" },
-      { "image": "/images/jean.png" }
-    ] 
+      { "image": "images/kuki.png", "tags": [] },
+      { "image": "/images/jean.png", "tags": [] }
+    ]
   },
   {
     "tier": "T2",
     "mainDPS": [
-      { "image": "/images/wrio.png" },
-      { "image": "images/itto.png" },
-      { "image": "images/keqing.png" },
-      { "image": "images/tighnari.png" },
-      { "image": "images/tartaglia.png" },
-      { "image": "images/wanderer.png" },
-      { "image": "images/yanfei.png" },
-      { "image": "images/cyno.png" }
+      { "image": "/images/wrio.png", "tags": [] },
+      { "image": "images/itto.png", "tags": [] },
+      { "image": "images/keqing.png", "tags": [] },
+      { "image": "images/tighnari.png", "tags": [] },
+      { "image": "images/tartaglia.png", "tags": [] },
+      { "image": "images/wanderer.png", "tags": [] },
+      { "image": "images/yanfei.png", "tags": [] },
+      { "image": "images/cyno.png", "tags": [] }
     ],
     "subDPS": [
-      { "image": "/images/beidou.png" }
+      { "image": "/images/beidou.png", "tags": [] }
     ],
     "amplifiers": [
-      { "image": "/images/collei.png" }
+      { "image": "/images/collei.png", "tags": [] }
     ],
-    "sustain": [] 
+    "sustain": []
   },
   {
     "tier": "T3",
     "mainDPS": [
-      { "image": "/images/ayaka.png" },
-      { "image": "images/ganyu.png" },
-      { "image": "images/heizou.png" },
-      { "image": "images/sethos.png" }
+      { "image": "/images/ayaka.png", "tags": [] },
+      { "image": "images/ganyu.png", "tags": [] },
+      { "image": "/images/heizou.png", "tags": [] },
+      { "image": "/images/sethos.png", "tags": [] }
     ],
     "subDPS": [
-      { "image": "/images/kayea.png" }
+      { "image": "/images/kayea.png", "tags": [] }
     ],
     "amplifiers": [
-      { "image": "/images/kachina.png" }
+      { "image": "/images/kachina.png", "tags": [] }
     ],
-    "sustain": [] 
+    "sustain": []
   },
   {
     "tier": "T4",
     "mainDPS": [
-      { "image": "/images/eula.png" },
-      { "image": "images/ninnguang.png" },
-      { "image": "images/klee.png" },
-      { "image": "images/noelle.png" },
-      { "image": "images/razor.png" }
+      { "image": "/images/eula.png", "tags": [] },
+      { "image": "images/ninnguang.png", "tags": [] },
+      { "image": "images/klee.png", "tags": [] },
+      { "image": "images/noelle.png", "tags": [] },
+      { "image": "images/razor.png", "tags": [] }
     ],
     "subDPS": [
-      { "image": "/images/chongyun.png" }
+      { "image": "/images/chongyun.png", "tags": [] }
     ],
     "amplifiers": [
-      { "image": "/images/barbara.png" }
+      { "image": "/images/barbara.png", "tags": [] }
     ],
-    "sustain": [] 
+    "sustain": []
   },
   {
-      "tier": "T5",
-      "mainDPS": [
-        { "image": "/images/amber.png" },
-        { "image": "images/freminet.png" },
-        { "image": "images/xinyan.png" }
-      ],
-      "subDPS": [
-      ],
-      "amplifiers": [
-      ],
-      "sustain": [
-      ]
+    "tier": "T5",
+    "mainDPS": [
+      { "image": "/images/amber.png", "tags": [] },
+      { "image": "images/freminet.png", "tags": [] },
+      { "image": "images/xinyan.png", "tags": [] }
+    ],
+    "subDPS": [],
+    "amplifiers": [],
+    "sustain": []
   }
 ]
