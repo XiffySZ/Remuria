@@ -2,7 +2,7 @@
   {
     "tier": "T0",
     "mainDPS": [
-      { "image": "images/alhaitham.png", "tags": ["AOE",] },
+      { "image": "images/alhaitham.png", "tags": ["AOE"] },
       { "image": "images/neuvilette.png", "tags": ["AOE"] },
       { "image": "images/arlleccino.png", "tags": ["AOE"] }
     ],
