@@ -2,45 +2,45 @@
   {
     "tier": "T0",
     "mainDPS": [
-      { "image": "images/alhaitham.png", "tags": [] },
-      { "image": "images/neuvilette.png", "tags": [] },
-      { "image": "images/arlleccino.png", "tags": [] }
+      { "image": "images/alhaitham.png", "tags": ["AOE",] },
+      { "image": "images/neuvilette.png", "tags": ["AOE"] },
+      { "image": "images/arlleccino.png", "tags": ["AOE"] }
     ],
     "subDPS": [
-      { "image": "images/emilie.png", "tags": [] },
+      { "image": "images/emilie.png", "tags": ["BUFF"] },
       { "image": "images/furina.png", "tags": [] },
       { "image": "images/yelan.png", "tags": [] },
       { "image": "images/xingqiu.png", "tags": [] },
       { "image": "images/fischl.png", "tags": [] }
     ],
     "amplifiers": [
-      { "image": "images/bennett.png", "tags": [] },
-      { "image": "images/xilonen.png", "tags": [] },
-      { "image": "images/kazuha.png", "tags": [] }
+      { "image": "images/bennett.png", "tags": ["BUFF"] },
+      { "image": "images/xilonen.png", "tags": ["HEAL"] },
+      { "image": "images/kazuha.png", "tags": ["BUFF"] }
     ],
     "sustain": [
-      { "image": "images/zhongli.png", "tags": [] },
-      { "image": "images/kokomi.png", "tags": [] }
+      { "image": "images/zhongli.png", "tags": ["SHIELD"] },
+      { "image": "images/kokomi.png", "tags": ["HEAL"] }
     ]
   },
   {
     "tier": "T0.5",
     "mainDPS": [
-      { "image": "images/hutao.png", "tags": [] },
+      { "image": "images/hutao.png", "tags": ["ST"] },
       { "image": "images/navia.png", "tags": [] },
-      { "image": "images/mualani.png", "tags": [] },
+      { "image": "images/mualani.png", "tags": ["ST"] },
       { "image": "images/kinich.png", "tags": [] }
     ],
     "subDPS": [
       { "image": "images/xiangling.png", "tags": [] },
-      { "image": "images/raiden.png", "tags": [] }
+      { "image": "images/raiden.png", "tags": ["BUFF","MULTIROLE"] }
     ],
     "amplifiers": [
-      { "image": "images/sucrose.png", "tags": [] },
+      { "image": "images/sucrose.png", "tags": ["BUFF"] },
       { "image": "images/nahida.png", "tags": [] }
     ],
     "sustain": [
-      { "image": "images/baizhu.png", "tags": [] }
+      { "image": "images/baizhu.png", "tags": ["HEAL"] }
     ]
   },
   {
@@ -60,8 +60,8 @@
       { "image": "/images/xianyun.png", "tags": [] }
     ],
     "sustain": [
-      { "image": "images/kuki.png", "tags": [] },
-      { "image": "/images/jean.png", "tags": [] }
+      { "image": "images/kuki.png", "tags": ["HEAL"] },
+      { "image": "/images/jean.png", "tags": ["HEAL"] }
     ]
   },
   {
@@ -103,9 +103,9 @@
   {
     "tier": "T4",
     "mainDPS": [
-      { "image": "/images/eula.png", "tags": [] },
+      { "image": "/images/eula.png", "tags": [ST] },
       { "image": "images/ninnguang.png", "tags": [] },
-      { "image": "images/klee.png", "tags": [] },
+      { "image": "images/klee.png", "tags": [STAMINA] },
       { "image": "images/noelle.png", "tags": [] },
       { "image": "images/razor.png", "tags": [] }
     ],
