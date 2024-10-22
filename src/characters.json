@@ -103,9 +103,9 @@
   {
     "tier": "T4",
     "mainDPS": [
-      { "image": "/images/eula.png", "tags": [ST] },
+      { "image": "/images/eula.png", "tags": ["ST"] },
       { "image": "images/ninnguang.png", "tags": [] },
-      { "image": "images/klee.png", "tags": [STAMINA] },
+      { "image": "images/klee.png", "tags": ["STAMINA"] },
       { "image": "images/noelle.png", "tags": [] },
       { "image": "images/razor.png", "tags": [] }
     ],
