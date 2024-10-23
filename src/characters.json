@@ -1,131 +1,619 @@
 [
-  {
-    "tier": "T0",
-    "mainDPS": [
-      { "image": "images/alhaitham.png", "tags": [] },
-      { "image": "images/neuvilette.png", "tags": [] },
-      { "image": "images/arlleccino.png", "tags": [] }
-    ],
-    "subDPS": [
-      { "image": "images/emilie.png", "tags": [] },
-      { "image": "images/furina.png", "tags": [] },
-      { "image": "images/yelan.png", "tags": [] },
-      { "image": "images/xingqiu.png", "tags": [] },
-      { "image": "images/fischl.png", "tags": [] }
-    ],
-    "amplifiers": [
-      { "image": "images/bennett.png", "tags": [] },
-      { "image": "images/xilonen.png", "tags": [] },
-      { "image": "images/kazuha.png", "tags": [] }
-    ],
-    "sustain": [
-      { "image": "images/zhongli.png", "tags": [] },
-      { "image": "images/kokomi.png", "tags": [] }
-    ]
-  },
-  {
-    "tier": "T0.5",
-    "mainDPS": [
-      { "image": "images/hutao.png", "tags": [] },
-      { "image": "images/navia.png", "tags": [] },
-      { "image": "images/mualani.png", "tags": [] },
-      { "image": "images/kinich.png", "tags": [] }
-    ],
-    "subDPS": [
-      { "image": "images/xiangling.png", "tags": [] },
-      { "image": "images/raiden.png", "tags": [] }
-    ],
-    "amplifiers": [
-      { "image": "images/sucrose.png", "tags": [] },
-      { "image": "images/nahida.png", "tags": [] }
-    ],
-    "sustain": [
-      { "image": "images/baizhu.png", "tags": [] }
-    ]
-  },
-  {
-    "tier": "T1",
-    "mainDPS": [
-      { "image": "/images/clorinde.png", "tags": [] },
-      { "image": "images/lyney.png", "tags": [] },
-      { "image": "images/xiao.png", "tags": [] },
-      { "image": "images/nilou.png", "tags": [] },
-      { "image": "images/yoimiya.png", "tags": [] },
-      { "image": "images/gaming.png", "tags": [] }
-    ],
-    "subDPS": [
-      { "image": "/images/yae miko.png", "tags": [] }
-    ],
-    "amplifiers": [
-      { "image": "/images/xianyun.png", "tags": [] }
-    ],
-    "sustain": [
-      { "image": "images/kuki.png", "tags": [] },
-      { "image": "/images/jean.png", "tags": [] }
-    ]
-  },
-  {
-    "tier": "T2",
-    "mainDPS": [
-      { "image": "/images/wrio.png", "tags": [] },
-      { "image": "images/itto.png", "tags": [] },
-      { "image": "images/keqing.png", "tags": [] },
-      { "image": "images/tighnari.png", "tags": [] },
-      { "image": "images/tartaglia.png", "tags": [] },
-      { "image": "images/wanderer.png", "tags": [] },
-      { "image": "images/yanfei.png", "tags": [] },
-      { "image": "images/cyno.png", "tags": [] }
-    ],
-    "subDPS": [
-      { "image": "/images/beidou.png", "tags": [] }
-    ],
-    "amplifiers": [
-      { "image": "/images/collei.png", "tags": [] }
-    ],
-    "sustain": []
-  },
-  {
-    "tier": "T3",
-    "mainDPS": [
-      { "image": "/images/ayaka.png", "tags": [] },
-      { "image": "images/ganyu.png", "tags": [] },
-      { "image": "/images/heizou.png", "tags": [] },
-      { "image": "/images/sethos.png", "tags": [] }
-    ],
-    "subDPS": [
-      { "image": "/images/kayea.png", "tags": [] }
-    ],
-    "amplifiers": [
-      { "image": "/images/kachina.png", "tags": [] }
-    ],
-    "sustain": []
-  },
-  {
-    "tier": "T4",
-    "mainDPS": [
-      { "image": "/images/eula.png", "tags": [] },
-      { "image": "images/ninnguang.png", "tags": [] },
-      { "image": "images/klee.png", "tags": [] },
-      { "image": "images/noelle.png", "tags": [] },
-      { "image": "images/razor.png", "tags": [] }
-    ],
-    "subDPS": [
-      { "image": "/images/chongyun.png", "tags": [] }
-    ],
-    "amplifiers": [
-      { "image": "/images/barbara.png", "tags": [] }
-    ],
-    "sustain": []
-  },
-  {
-    "tier": "T5",
-    "mainDPS": [
-      { "image": "/images/amber.png", "tags": [] },
-      { "image": "images/freminet.png", "tags": [] },
-      { "image": "images/xinyan.png", "tags": [] }
-    ],
-    "subDPS": [],
-    "amplifiers": [],
-    "sustain": []
-  }
-]
+    {
+      "name": "Albedo",
+      "rarity": "5*",
+      "element": "Geo",
+      "image": "/images/albedo.png",
+      "weapon": "Sword"
+    },
+    {
+      "name": "Alhaitham",
+      "rarity": "5*",
+      "element": "Dendro",
+      "image": "/images/alhaitham.png",
+      "weapon": "Sword"
+    },
+    {
+      "name": "Aloy",
+      "rarity": "5*",
+      "element": "Cryo",
+      "image": "/images/aloy.png",
+      "weapon": "Bow"
+    },
+    {
+      "name": "Amber ",
+      "rarity": "4*",
+      "element": "Pyro",
+      "image": "/images/amber.png",
+      "weapon": "Bow"
+    },
+    {
+      "name": "Arlecchino",
+      "rarity": "5*",
+      "element": "Pyro",
+      "image": "/images/arlecchino.png",
+      "weapon": "Polearm"
+    },
+    {
+      "name": "Kamisato Ayaka",
+      "rarity": "5*",
+      "element": "Cryo",
+      "image": "/images/ayaka.png",
+      "weapon": "Sword"
+    },
+    {
+      "name": "Kamisato Ayaka",
+      "rarity": "5*",
+      "element": "Hydro",
+      "image": "/images/ayato.png",
+      "weapon": "Sword"
+    },
+    {
+      "name": "Baizhu",
+      "rarity": "5*",
+      "element": "Dendro",
+      "image": "/images/baizhu.png",
+      "weapon": "Catalyst"
+    },
+    {
+      "name": "Barbara",
+      "rarity": "4*",
+      "element": "Hydro",
+      "image": "/images/barbara.png",
+      "weapon": "Catalyst"
+    },
+    {
+      "name": "Beidou",
+      "rarity": "4*",
+      "element": "Electro",
+      "image": "/images/beidou.png",
+      "weapon": "Claymore"
+    },
+    {
+      "name": "Bennett",
+      "rarity": "4*",
+      "element": "Pyro",
+      "image": "/images/bennett.png",
+      "weapon": "Sword"
+    },
+    {
+      "name": "Candace",
+      "rarity": "4*",
+      "element": "Hydro",
+      "image": "/images/candace.png",
+      "weapon": "Polearm"
+    },
+    {
+      "name": "Charlotte",
+      "rarity": "4*",
+      "element": "Cryo",
+      "image": "/images/charlotte.png",
+      "weapon": "Catalyst"
+    },
+    {
+      "name": "Chevreuse",
+      "rarity": "4*",
+      "element": "Pyro",
+      "image": "/images/chevreuse.png",
+      "weapon": "Polearm"
+    },
+    {
+      "name": "Chiori",
+      "rarity": "5*",
+      "element": "Geo",
+      "image": "/images/chiori.png",
+      "weapon": "Sword"
+    },
+    {
+      "name": "Chongyun",
+      "rarity": "4*",
+      "element": "Cryo",
+      "image": "/images/chongyun.png",
+      "weapon": "Claymore"
+    },
+    {
+      "name": "Collei",
+      "rarity": "4*",
+      "element": "Dendro",
+      "image": "/images/collei.png",
+      "weapon": "Bow"
+    },
+    {
+      "name": "Cyno",
+      "rarity": "5*",
+      "element": "Electro",
+      "image": "/images/cyno.png",
+      "weapon": "Polearm"
+    },
+    {
+      "name": "Dehya",
+      "rarity": "5*",
+      "element": "Pyro",
+      "image": "/images/dehya.png",
+      "weapon": "Claymore"
+    },
+    {
+      "name": "Diluc",
+      "rarity": "5*",
+      "element": "Pyro",
+      "image": "/images/diluc.png",
+      "weapon": "Claymore"
+    },
+    {
+      "name": "Diona",
+      "rarity": "4*",
+      "element": "Cryo",
+      "image": "/images/diona.png",
+      "weapon": "Bow"
+    },
+    {
+      "name": "Dori",
+      "rarity": "4*",
+      "element": "Electro",
+      "image": "/images/dori.png",
+      "weapon": "Claymore"
+    },
+    {
+      "name": "Emilie",
+      "rarity": "5*",
+      "element": "Dendro",
+      "image": "/images/emilie.png",
+      "weapon": "Polearm"
+    },
+    {
+      "name": "Eula",
+      "rarity": "5*",
+      "element": "Cryo",
+      "image": "/images/eula.png",
+      "weapon": "Claymore"
+    },
+    {
+      "name": "Faruzan",
+      "rarity": "4*",
+      "element": "Anemo",
+      "image": "/images/faruzan.png",
+      "weapon": "Bow"
+    },
+    {
+      "name": "Fischl",
+      "rarity": "4*",
+      "element": "Electro",
+      "image": "/images/fischl.png",
+      "weapon": "Bow"
+    },
+    {
+      "name": "Freminet",
+      "rarity": "4*",
+      "element": "Cryo",
+      "image": "/images/freminet.png",
+      "weapon": "Claymore"
+    },
+    {
+      "name": "Furina",
+      "rarity": "5*",
+      "element": "Hydro",
+      "image": "/images/furina.png",
+      "weapon": "Sword"
+    },
+    {
+      "name": "Gaming",
+      "rarity": "4*",
+      "element": "Pyro",
+      "image": "/images/gaming.png",
+      "weapon": "Claymore"
+    },
+    {
+      "name": "Ganyu",
+      "rarity": "5*",
+      "element": "Cryo",
+      "image": "/images/ganyu.png",
+      "weapon": "Bow"
+    },
+    {
+      "name": "Gorou",
+      "rarity": "4*",
+      "element": "Geo",
+      "image": "/images/gorou.png",
+      "weapon": "Bow"
+    },
+    {
+      "name": "Shikanoin Heizou",
+      "rarity": "4*",
+      "element": "Anemo",
+      "image": "/images/heizou.png",
+      "weapon": "Catalyst"
+    },
+    {
+      "name": "Hu Tao",
+      "rarity": "5*",
+      "element": "Pyro",
+      "image": "/images/hutao.png",
+      "weapon": "Polearm"
+    },
+    {
+      "name": "Arataki Itto",
+      "rarity": "5*",
+      "element": "Geo",
+      "image": "/images/itto.png",
+      "weapon": "Claymore"
+    },
+    {
+      "name": "Jean",
+      "rarity": "5*",
+      "element": "Anemo",
+      "image": "/images/jean.png",
+      "weapon": "Sword"
+    },
+    {
+      "name": "Character 36",
+      "rarity": "5*",
+      "element": "Hydro",
+      "image": "/images/character36.png",
+      "weapon": "Catalyst"
+    },
+    {
+      "name": "Character 37",
+      "rarity": "4*",
+      "element": "Dendro",
+      "image": "/images/character37.png",
+      "weapon": "Sword"
+    },
+    {
+      "name": "Character 38",
+      "rarity": "5*",
+      "element": "Pyro",
+      "image": "/images/character38.png",
+      "weapon": "Polearm"
+    },
+    {
+      "name": "Character 39",
+      "rarity": "4*",
+      "element": "Electro",
+      "image": "/images/character39.png",
+      "weapon": "Bow"
+    },
+    {
+      "name": "Character 40",
+      "rarity": "4*",
+      "element": "Cryo",
+      "image": "/images/character40.png",
+      "weapon": "Claymore"
+    },
+    {
+      "name": "Character 41",
+      "rarity": "5*",
+      "element": "Hydro",
+      "image": "/images/character41.png",
+      "weapon": "Catalyst"
+    },
+    {
+      "name": "Character 42",
+      "rarity": "4*",
+      "element": "Geo",
+      "image": "/images/character42.png",
+      "weapon": "Sword"
+    },
+    {
+      "name": "Character 43",
+      "rarity": "5*",
+      "element": "Anemo",
+      "image": "/images/character43.png",
+      "weapon": "Polearm"
+    },
+    {
+      "name": "Character 44",
+      "rarity": "4*",
+      "element": "Pyro",
+      "image": "/images/character44.png",
+      "weapon": "Bow"
+    },
+    {
+      "name": "Character 45",
+      "rarity": "5*",
+      "element": "Dendro",
+      "image": "/images/character45.png",
+      "weapon": "Claymore"
+    },
+    {
+      "name": "Character 46",
+      "rarity": "4*",
+      "element": "Electro",
+      "image": "/images/character46.png",
+      "weapon": "Catalyst"
+    },
+    {
+      "name": "Character 47",
+      "rarity": "4*",
+      "element": "Anemo",
+      "image": "/images/character47.png",
+      "weapon": "Sword"
+    },
+    {
+      "name": "Character 48",
+      "rarity": "5*",
+      "element": "Geo",
+      "image": "/images/character48.png",
+      "weapon": "Polearm"
+    },
+    {
+      "name": "Character 49",
+      "rarity": "5*",
+      "element": "Cryo",
+      "image": "/images/character49.png",
+      "weapon": "Claymore"
+    },
+    {
+      "name": "Character 50",
+      "rarity": "4*",
+      "element": "Hydro",
+      "image": "/images/character50.png",
+      "weapon": "Sword"
+    },
+    {
+      "name": "Character 51",
+      "rarity": "4*",
+      "element": "Dendro",
+      "image": "/images/character51.png",
+      "weapon": "Catalyst"
+    },
+    {
+      "name": "Character 52",
+      "rarity": "5*",
+      "element": "Pyro",
+      "image": "/images/character52.png",
+      "weapon": "Bow"
+    },
+    {
+      "name": "Character 53",
+      "rarity": "4*",
+      "element": "Cryo",
+      "image": "/images/character53.png",
+      "weapon": "Claymore"
+    },
+    {
+      "name": "Character 54",
+      "rarity": "5*",
+      "element": "Electro",
+      "image": "/images/character54.png",
+      "weapon": "Catalyst"
+    },
+    {
+      "name": "Character 55",
+      "rarity": "5*",
+      "element": "Anemo",
+      "image": "/images/character55.png",
+      "weapon": "Sword"
+    },
+    {
+      "name": "Character 56",
+      "rarity": "4*",
+      "element": "Geo",
+      "image": "/images/character56.png",
+      "weapon": "Polearm"
+    },
+    {
+      "name": "Character 57",
+      "rarity": "5*",
+      "element": "Hydro",
+      "image": "/images/character57.png",
+      "weapon": "Bow"
+    },
+    {
+      "name": "Character 58",
+      "rarity": "4*",
+      "element": "Dendro",
+      "image": "/images/character58.png",
+      "weapon": "Claymore"
+    },
+    {
+      "name": "Character 59",
+      "rarity": "5*",
+      "element": "Pyro",
+      "image": "/images/character59.png",
+      "weapon": "Catalyst"
+    },
+    {
+      "name": "Character 60",
+      "rarity": "4*",
+      "element": "Electro",
+      "image": "/images/character60.png",
+      "weapon": "Sword"
+    },
+    {
+      "name": "Character 61",
+      "rarity": "4*",
+      "element": "Cryo",
+      "image": "/images/character61.png",
+      "weapon": "Polearm"
+    },
+    {
+      "name": "Character 62",
+      "rarity": "5*",
+      "element": "Hydro",
+      "image": "/images/character62.png",
+      "weapon": "Bow"
+    },
+    {
+      "name": "Character 63",
+      "rarity": "4*",
+      "element": "Geo",
+      "image": "/images/character63.png",
+      "weapon": "Claymore"
+    },
+    {
+      "name": "Character 64",
+      "rarity": "5*",
+      "element": "Anemo",
+      "image": "/images/character64.png",
+      "weapon": "Catalyst"
+    },
+    {
+      "name": "Character 65",
+      "rarity": "4*",
+      "element": "Pyro",
+      "image": "/images/character65.png",
+      "weapon": "Sword"
+    },
+    {
+      "name": "Character 66",
+      "rarity": "5*",
+      "element": "Dendro",
+      "image": "/images/character66.png",
+      "weapon": "Polearm"
+    },
+    {
+      "name": "Character 67",
+      "rarity": "4*",
+      "element": "Electro",
+      "image": "/images/character67.png",
+      "weapon": "Claymore"
+    },
+    {
+      "name": "Character 68",
+      "rarity": "4*",
+      "element": "Anemo",
+      "image": "/images/character68.png",
+      "weapon": "Catalyst"
+    },
+    {
+      "name": "Character 69",
+      "rarity": "5*",
+      "element": "Geo",
+      "image": "/images/character69.png",
+      "weapon": "Bow"
+    },
+    {
+      "name": "Character 70",
+      "rarity": "5*",
+      "element": "Cryo",
+      "image": "/images/character70.png",
+      "weapon": "Sword"
+    },
+    {
+      "name": "Character 71",
+      "rarity": "4*",
+      "element": "Hydro",
+      "image": "/images/character71.png",
+      "weapon": "Polearm"
+    },
+    {
+      "name": "Character 72",
+      "rarity": "4*",
+      "element": "Dendro",
+      "image": "/images/character72.png",
+      "weapon": "Catalyst"
+    },
+    {
+      "name": "Character 73",
+      "rarity": "5*",
+      "element": "Pyro",
+      "image": "/images/character73.png",
+      "weapon": "Bow"
+    },
+    {
+      "name": "Character 74",
+      "rarity": "4*",
+      "element": "Cryo",
+      "image": "/images/character74.png",
+      "weapon": "Claymore"
+    },
+    {
+      "name": "Character 75",
+      "rarity": "5*",
+      "element": "Electro",
+      "image": "/images/character75.png",
+      "weapon": "Sword"
+    },
+    {
+      "name": "Character 76",
+      "rarity": "5*",
+      "element": "Anemo",
+      "image": "/images/character76.png",
+      "weapon": "Polearm"
+    },
+    {
+      "name": "Character 77",
+      "rarity": "4*",
+      "element": "Geo",
+      "image": "/images/character77.png",
+      "weapon": "Claymore"
+    },
+    {
+      "name": "Character 78",
+      "rarity": "5*",
+      "element": "Hydro",
+      "image": "/images/character78.png",
+      "weapon": "Catalyst"
+    },
+    {
+      "name": "Character 79",
+      "rarity": "4*",
+      "element": "Dendro",
+      "image": "/images/character79.png",
+      "weapon": "Sword"
+    },
+    {
+      "name": "Character 80",
+      "rarity": "5*",
+      "element": "Pyro",
+      "image": "/images/character80.png",
+      "weapon": "Bow"
+    },
+    {
+      "name": "Character 81",
+      "rarity": "4*",
+      "element": "Electro",
+      "image": "/images/character81.png",
+      "weapon": "Claymore"
+    },
+    {
+      "name": "Character 82",
+      "rarity": "4*",
+      "element": "Cryo",
+      "image": "/images/character82.png",
+      "weapon": "/images/character82.png"
+    },
+    {
+      "name": "Character 83",
+      "rarity": "5*",
+      "element": "Hydro",
+      "image": "/images/character83.png",
+      "weapon": "Sword"
+    },
+    {
+      "name": "Character 84",
+      "rarity": "4*",
+      "element": "Geo",
+      "image": "/images/character84.png",
+      "weapon": "Polearm"
+    },
+    {
+      "name": "Character 85",
+      "rarity": "5*",
+      "element": "Anemo",
+      "image": "/images/character85.png",
+      "weapon": "Claymore"
+    },
+    {
+      "name": "Character 86",
+      "rarity": "4*",
+      "element": "Pyro",
+      "image": "/images/character86.png",
+      "weapon": "Catalyst"
+    },
+    {
+      "name": "Character 87",
+      "rarity": "5*",
+      "element": "Dendro",
+      "image": "/images/character87.png",
+      "weapon": "Bow"
+    },
+    {
+      "name": "Character 88",
+      "rarity": "4*",
+      "element": "Electro",
+      "image": "/images/character88.png",
+      "weapon": "Sword"
+    }
+  ]
+  

@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
-import '../Sidebar.css'; // Ensure you have appropriate styles
-import { FaHome, FaUserFriends, FaGem, FaListAlt, FaInfoCircle } from 'react-icons/fa'; // Import the icons you want to use
+import React from 'react';
+import '../Sidebar.css'; 
+import { FaHome, FaUserFriends, FaGem, FaListAlt, FaInfoCircle } from 'react-icons/fa';
 
-const Sidebar = ({ setCurrentPage }) => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
-
+const Sidebar = ({ setCurrentPage, isCollapsed, setIsCollapsed }) => {
   const toggleSidebar = () => {
     setIsCollapsed(!isCollapsed);
   };
@@ -16,24 +14,19 @@ const Sidebar = ({ setCurrentPage }) => {
       </button>
       <ul className="sidebar-list">
         <li className="sidebar-item" onClick={() => setCurrentPage('home')}>
-          <FaHome /> {/* Add icon for Home */}
-          <span>Home</span> {/* Text that will be hidden when collapsed */}
+          <FaHome /> <span>Home</span>
         </li>
         <li className="sidebar-item" onClick={() => setCurrentPage('characters')}>
-          <FaUserFriends /> {/* Add icon for Characters */}
-          <span>Characters</span>
+          <FaUserFriends /> <span>Characters</span>
         </li>
         <li className="sidebar-item" onClick={() => setCurrentPage('artifacts')}>
-          <FaGem /> {/* Add icon for Artifacts */}
-          <span>Artifacts</span>
+          <FaGem /> <span>Artifacts</span>
         </li>
         <li className="sidebar-item" onClick={() => setCurrentPage('tierList')}>
-          <FaListAlt /> {/* Add icon for Tier List */}
-          <span>Tier List</span>
+          <FaListAlt /> <span>Tier List</span>
         </li>
         <li className="sidebar-item" onClick={() => setCurrentPage('about')}>
-          <FaInfoCircle /> {/* Add icon for About */}
-          <span>About</span>
+          <FaInfoCircle /> <span>About</span>
         </li>
       </ul>
     </div>

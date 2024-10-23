@@ -8,6 +8,7 @@ import About from './components/About';
 import Sidebar from './components/Sidebar';
 
 function App() {
+  const [isCollapsed, setIsCollapsed] = useState(false);
   const [currentPage, setCurrentPage] = useState('home');
 
   const renderPage = () => {
@@ -15,7 +16,7 @@ function App() {
       case 'home':
         return <Home />;
       case 'characters':
-        return <Characters />;
+        return <Characters isCollapsed={isCollapsed} />; // Pass isCollapsed to Characters
       case 'artifacts':
         return <Artifacts />;
       case 'tierList':
@@ -29,7 +30,11 @@ function App() {
 
   return (
     <div className="App">
-      <Sidebar setCurrentPage={setCurrentPage} />
+      <Sidebar 
+        setCurrentPage={setCurrentPage} 
+        isCollapsed={isCollapsed}  // Pass isCollapsed to Sidebar
+        setIsCollapsed={setIsCollapsed} // Pass setIsCollapsed to Sidebar
+      />
       <div className="content">
         {renderPage()}
       </div>
