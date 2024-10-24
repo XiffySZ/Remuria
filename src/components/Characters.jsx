@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CharacterCard from './CharacterCard';
+import CharacterListCard from './CharListCard';
 import characterData from '../characters.json';
 import '../styles.css';
 
@@ -29,7 +29,7 @@ const Characters = ({ isCollapsed }) => {
   });
 
   return (
-    <div>
+    <div className="characters-container">
       <div className={`filters-container ${isCollapsed ? 'collapsed' : ''}`}>
         <input
           type="text"
@@ -38,8 +38,9 @@ const Characters = ({ isCollapsed }) => {
           onChange={(e) => setSearchTerm(e.target.value)}
           className={`search-bar ${isCollapsed ? '' : 'expanded'}`} // Conditionally apply class
         />
-
+        {/* Filter options and reset button */}
         <div className="filter-box">
+          {/* Rarity Filter */}
           <div className="filter-options">
             <div onClick={() => setRarityFilter('all')} className={`filter-option ${rarityFilter === 'all' ? 'active' : ''}`}>
               *
@@ -52,8 +53,8 @@ const Characters = ({ isCollapsed }) => {
             </div>
           </div>
         </div>
-
         <div className="filter-box">
+          {/* Element Filter */}
           <div className="filter-options">
             <div onClick={() => setElementFilter('all')} className={`filter-option ${elementFilter === 'all' ? 'active' : ''}`}>
               *
@@ -81,7 +82,7 @@ const Characters = ({ isCollapsed }) => {
             </div>
           </div>
         </div>
-        
+
         {/* Updated Weapon Filter Box */}
         <div className={`filter-box ${isCollapsed ? 'collapsed' : ''}`}>
           <div className={`filter-options ${isCollapsed ? 'space-between' : ''}`}>
@@ -105,7 +106,7 @@ const Characters = ({ isCollapsed }) => {
             </div>
           </div>
         </div>
-        
+
         {/* Reset Button with dynamic text based on sidebar state */}
         <button onClick={resetFilters} className={`reset-button ${isCollapsed ? 'collapsed' : ''}`}>
           {isCollapsed ? 'Reset Filters' :'Reset' }
@@ -114,7 +115,7 @@ const Characters = ({ isCollapsed }) => {
 
       <div className="character-list">
         {filteredCharacters.map((character, index) => (
-          <CharacterCard key={index} image={character.image} tags={[character.rarity, character.element]} />
+          <CharacterListCard key={index} image={character.image} tags={[character.rarity, character.element]} />
         ))}
       </div>
     </div>

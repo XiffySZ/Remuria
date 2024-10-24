@@ -9,24 +9,33 @@ const Sidebar = ({ setCurrentPage, isCollapsed, setIsCollapsed }) => {
 
   return (
     <div className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
-      <button className="collapse-btn" onClick={toggleSidebar}>
+      <button 
+        className="collapse-btn" 
+        onClick={toggleSidebar}
+        aria-label={isCollapsed ? 'Expand Sidebar' : 'Collapse Sidebar'}
+      >
         {isCollapsed ? '>' : '<'}
       </button>
       <ul className="sidebar-list">
         <li className="sidebar-item" onClick={() => setCurrentPage('home')}>
-          <FaHome /> <span>Home</span>
+          <FaHome className="icon" /> 
+          {!isCollapsed && <span>Home</span>}
         </li>
         <li className="sidebar-item" onClick={() => setCurrentPage('characters')}>
-          <FaUserFriends /> <span>Characters</span>
+          <FaUserFriends className="icon" /> 
+          {!isCollapsed && <span>Characters</span>}
         </li>
         <li className="sidebar-item" onClick={() => setCurrentPage('artifacts')}>
-          <FaGem /> <span>Artifacts</span>
+          <FaGem className="icon" /> 
+          {!isCollapsed && <span>Artifacts</span>}
         </li>
         <li className="sidebar-item" onClick={() => setCurrentPage('tierList')}>
-          <FaListAlt /> <span>Tier List</span>
+          <FaListAlt className="icon" /> 
+          {!isCollapsed && <span>Tier List</span>}
         </li>
         <li className="sidebar-item" onClick={() => setCurrentPage('about')}>
-          <FaInfoCircle /> <span>About</span>
+          <FaInfoCircle className="icon" /> 
+          {!isCollapsed && <span>About</span>}
         </li>
       </ul>
     </div>

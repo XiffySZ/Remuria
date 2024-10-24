@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CharacterCard from './CharacterCard';
-import characterData from '../chartier.json'; // Import the JSON data
+import characterData from '../chartier.json';
+import '../styles.css'; // Import the JSON data
 
 const TierList = () => {
   const [tierData, setTierData] = useState([]);

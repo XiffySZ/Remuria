@@ -1,5 +1,10 @@
 /* Sidebar styles */
+body {
+  margin: 0%;
+}
+
 .sidebar {
+  position: fixed;
   font-size: small;
   width: 150px; /* Width of the sidebar */
   background-color: #2a2a33; /* Sidebar background color */

@@ -1,3 +1,7 @@
+:root {
+  --content-margin-left: 140px; /* Default margin for expanded sidebar */
+}
+
 body {
   font-family: 'Segoe UI', serif;
   background: #1d1c23;
@@ -18,19 +22,17 @@ body {
   flex-grow: 1; /* Allow the layout to fill available space */
 }
 
-.sidebar {
-  width: 250px; /* Width of the sidebar */
-  background-color: #333; /* Sidebar background color */
-  color: white;
-  height: 100vh; /* Full height */
-  transition: width 0.3s ease; /* Transition for collapsing */
-}
-
 .content {
+  margin-left: var(--content-margin-left);
+  height: 100vh;
   flex-grow: 1; /* Allow content area to fill remaining space */
   padding: 20px; /* Add some padding around content */
   color: white; /* Content text color */
   flex: 1;
+}
+
+.sidebar.collapsed ~ .content {
+  margin-left: 100px; /* Adjust margin for collapsed sidebar */
 }
 
 .tier-list-container {
@@ -136,14 +138,21 @@ body {
   text-align: center;
 }
 
+.characters-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .character-list {
   display: flex;
   flex-wrap: wrap; /* Ensure cards wrap to the next line if necessary */
   justify-content: flex-start; /* Align items to the left */
   padding: 1px; /* Add padding inside the container to avoid empty space */
+  flex-grow: 1;
 }
 
-.character-card {
+.character-card { /*For TierList component */
   display: inline-block;
   border-radius: 10px;
   padding: 3px; /* Original padding */
@@ -151,6 +160,15 @@ body {
   height: 50px; /* Ensure uniform height for all cards */
   text-align: center;
   margin-bottom: 50px; /* Add vertical margin */
+}
+
+.charlist-card { /*For Character component */
+  display: inline-block;
+  border-radius: 10px;
+  padding: 3px; /* Original padding */
+  width: 50px; /* Original width for proper card size */
+  height: 50px; /* Ensure uniform height for all cards */
+  text-align: center;
 }
 
 /* Increase top margin for cards in the first row */
@@ -222,6 +240,7 @@ body {
   align-items: flex-start; /* Align items vertically at the start */
   gap: 10px; /* Space between filter boxes */
   flex-wrap: wrap; /* Allow wrapping of filter boxes when needed */
+  margin-bottom: 20px;
 }
 
 .filter-box {
@@ -281,7 +300,6 @@ body {
   max-width: 350px; /* Maximum width for the search bar */
   margin-left: 5px;
   margin-right: 0px; /* Space to the right of the search bar */
-  margin-bottom: 20px;
 }
 
 .search-bar.expanded {
