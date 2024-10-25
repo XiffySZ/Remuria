@@ -43,13 +43,13 @@ const Characters = ({ isCollapsed }) => {
           {/* Rarity Filter */}
           <div className="filter-options">
             <div onClick={() => setRarityFilter('all')} className={`filter-option ${rarityFilter === 'all' ? 'active' : ''}`}>
-              *
+            *
             </div>
-            <div onClick={() => setRarityFilter('4*')} className={`filter-option ${rarityFilter === '4*' ? 'active' : ''}`}>
-              4*
+            <div onClick={() => setRarityFilter('4*')} className={`filter-option ${rarityFilter === '4*' ? 'active' : ''}`} style={{ color: 'violet' }}>
+              4★
             </div>
-            <div onClick={() => setRarityFilter('5*')} className={`filter-option ${rarityFilter === '5*' ? 'active' : ''}`}>
-              5*
+            <div onClick={() => setRarityFilter('5*')} className={`filter-option ${rarityFilter === '5*' ? 'active' : ''}`} style={{ color: 'gold' }}>
+              5★
             </div>
           </div>
         </div>
@@ -57,28 +57,28 @@ const Characters = ({ isCollapsed }) => {
           {/* Element Filter */}
           <div className="filter-options">
             <div onClick={() => setElementFilter('all')} className={`filter-option ${elementFilter === 'all' ? 'active' : ''}`}>
-              *
+            *
             </div>
             <div onClick={() => setElementFilter('Pyro')} className={`filter-option ${elementFilter === 'Pyro' ? 'active' : ''}`}>
-              P
+            <img src="./images/elements/Pyro.png" alt="Pyro" style={{ width: '20px', height: 'auto' }} />
             </div>
             <div onClick={() => setElementFilter('Hydro')} className={`filter-option ${elementFilter === 'Hydro' ? 'active' : ''}`}>
-              H
+            <img src="./images/elements/Hydro.png" alt="Hydro" style={{ width: '20px', height: 'auto' }} />
             </div>
             <div onClick={() => setElementFilter('Electro')} className={`filter-option ${elementFilter === 'Electro' ? 'active' : ''}`}>
-              E
+            <img src="./images/elements/Electro.png" alt="Electro" style={{ width: '20px', height: 'auto' }} />
             </div>
             <div onClick={() => setElementFilter('Geo')} className={`filter-option ${elementFilter === 'Geo' ? 'active' : ''}`}>
-              G
+            <img src="./images/elements/Geo.png" alt="Geo" style={{ width: '20px', height: 'auto' }} />
             </div>
             <div onClick={() => setElementFilter('Anemo')} className={`filter-option ${elementFilter === 'Anemo' ? 'active' : ''}`}>
-              A
+            <img src="./images/elements/Anemo.png" alt="Anemo" style={{ width: '20px', height: 'auto' }} />
             </div>
             <div onClick={() => setElementFilter('Cryo')} className={`filter-option ${elementFilter === 'Cryo' ? 'active' : ''}`}>
-              C
+            <img src="./images/elements/Cryo.png" alt="Cryo" style={{ width: '20px', height: 'auto' }} />
             </div>
             <div onClick={() => setElementFilter('Dendro')} className={`filter-option ${elementFilter === 'Dendro' ? 'active' : ''}`}>
-              D
+            <img src="./images/elements/Dendro.png" alt="Dendro" style={{ width: '20px', height: 'auto' }} />
             </div>
           </div>
         </div>
@@ -87,22 +87,22 @@ const Characters = ({ isCollapsed }) => {
         <div className={`filter-box ${isCollapsed ? 'collapsed' : ''}`}>
           <div className={`filter-options ${isCollapsed ? 'space-between' : ''}`}>
             <div onClick={() => setWeaponFilter('all')} className={`filter-option ${weaponFilter === 'all' ? 'active' : ''}`}>
-              *
+            *
             </div>
             <div onClick={() => setWeaponFilter('Claymore')} className={`filter-option ${weaponFilter === 'Claymore' ? 'active' : ''}`}>
-              Cl
+            <img src="./images/weapons/claymore.png" alt="Claymore" style={{ width: '20px', height: 'auto' }} />
             </div>
             <div onClick={() => setWeaponFilter('Sword')} className={`filter-option ${weaponFilter === 'Sword' ? 'active' : ''}`}>
-              S
+            <img src="./images/weapons/sword.png" alt="Sword" style={{ width: '20px', height: 'auto' }} />
             </div>
             <div onClick={() => setWeaponFilter('Catalyst')} className={`filter-option ${weaponFilter === 'Catalyst' ? 'active' : ''}`}>
-              C
+            <img src="./images/weapons/catalyst.png" alt="Catalyst" style={{ width: '20px', height: 'auto' }} />
             </div>
             <div onClick={() => setWeaponFilter('Bow')} className={`filter-option ${weaponFilter === 'Bow' ? 'active' : ''}`}>
-              B
+            <img src="./images/weapons/bow.png" alt="Bow" style={{ width: '20px', height: 'auto' }} />
             </div>
             <div onClick={() => setWeaponFilter('Polearm')} className={`filter-option ${weaponFilter === 'Polearm' ? 'active' : ''}`}>
-              P
+              <img src="./images/weapons/polearm.png" alt="Polearm" style={{ width: '20px', height: 'auto' }} />
             </div>
           </div>
         </div>
@@ -115,7 +115,7 @@ const Characters = ({ isCollapsed }) => {
 
       <div className="character-list">
         {filteredCharacters.map((character, index) => (
-          <CharacterListCard key={index} image={character.image} tags={[character.rarity, character.element]} />
+          <CharacterListCard key={index} image={character.image} charname={[character.charname]} />
         ))}
       </div>
     </div>

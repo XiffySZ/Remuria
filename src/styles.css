@@ -148,7 +148,6 @@ body {
   display: flex;
   flex-wrap: wrap; /* Ensure cards wrap to the next line if necessary */
   justify-content: flex-start; /* Align items to the left */
-  padding: 1px; /* Add padding inside the container to avoid empty space */
   flex-grow: 1;
 }
 
@@ -165,9 +164,8 @@ body {
 .charlist-card { /*For Character component */
   display: inline-block;
   border-radius: 10px;
-  padding: 3px; /* Original padding */
-  width: 50px; /* Original width for proper card size */
-  height: 50px; /* Ensure uniform height for all cards */
+  width: 100px; /* Original width for proper card size */
+  height: auto; /* Ensure uniform height for all cards */
   text-align: center;
 }
 
@@ -297,7 +295,7 @@ body {
   background-color: #333;
   border-radius: 8px; /* Rounded corners for the search bar */
   width: 40%; /* Full width to fill the container */
-  max-width: 350px; /* Maximum width for the search bar */
+  max-width: 200px; /* Maximum width for the search bar */
   margin-left: 5px;
   margin-right: 0px; /* Space to the right of the search bar */
 }
@@ -319,4 +317,34 @@ body {
   justify-content: wrap; /* Center the button */
   width: 100%; /* Full width to take the line */
   margin-top: 10px; /* Space above the button */
+}
+
+.charlist-overlay {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background: rgba(255, 255, 255, 0);
+  top: 75%;
+  left: -5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+}
+
+.charlist-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.charlist-card{
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  width: 120px; /* Adjust based on image size */
+  height: auto; /* Adjust based on image size */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
