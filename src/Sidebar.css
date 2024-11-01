@@ -5,6 +5,8 @@ body {
 
 .sidebar {
   position: fixed;
+  top: 0;
+  left: 0;
   font-size: small;
   width: 140px; /* Width of the sidebar */
   background-color: #2a2a33; /* Sidebar background color */

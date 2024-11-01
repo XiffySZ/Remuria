@@ -148,7 +148,17 @@ body {
   display: flex;
   flex-wrap: wrap; /* Ensure cards wrap to the next line if necessary */
   justify-content: flex-start; /* Align items to the left */
+  align-items: flex-start;
   flex-grow: 1;
+  margin-left: 5px;
+}
+
+.character-list.collapsed {
+  margin-left: 20px; /* Adjust margin for collapsed sidebar */
+}
+
+.character-list.expanded {
+  margin-left: 10px; /* Adjust margin for expanded sidebar */
 }
 
 .character-card { /*For TierList component */
@@ -161,24 +171,65 @@ body {
   margin-bottom: 50px; /* Add vertical margin */
 }
 
-.charlist-card { /*For Character component */
-  display: inline-block;
-  border-radius: 10px;
-  width: 100px; /* Original width for proper card size */
-  height: auto; /* Ensure uniform height for all cards */
-  text-align: center;
+
+.charlist-card {
+  position: relative;
+  display: flex; /* Use flexbox for better layout control */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  margin: 10px; /* Adjust spacing between cards */
+  width: 10%; /* Set width as needed; this allows for multiple cards in a row */
+  max-width: 120px; /* Set a maximum width for the card */
+  height: auto; /* Allow height to adjust based on content */
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.character-image {
+  width: 100%; /* Make sure the image fills the card */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image fits within the card */
+  filter: contrast(90%) brightness(105%);
+}
+
+.charlist-overlay {
+  position: absolute;
+  width: 100%;
+  height: auto; /* Adjust height as needed */
+  background: rgba(255, 255, 255, 0); /* Adjust overlay background as needed */
+  top: 75%;
+  left: 0; /* Center the overlay horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+}
+
+.charlist-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.collapsed-image {
+  width: 100%; /* Ensure it fills the card */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain;
+  filter: contrast(90%) brightness(105%);
+}
+
+.expanded-image {
+  width: 100px; /* Ensure it fills the card */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain;
+  filter: contrast(90%) brightness(105%);
 }
 
 /* Increase top margin for cards in the first row */
 .grid-cell > .character-card:nth-child(-n+3) { /* Adjust '3' based on how many cards you want in the first row */
   margin-top: 30px; /* Change this value to your desired top margin */
-}
-
-.character-image {
-  width: 100%; /* Original width */
-  height: auto; /* Original height */
-  object-fit: contain;
-  filter: contrast(90%) brightness(105%);
 }
 
 .tier-T0 {
@@ -251,7 +302,7 @@ body {
 
 .reset-button {
   font-size: 14px;
-  padding: 13px 13px; /* Add some padding */
+  padding: 14px 14px; /* Add some padding */
   background-color: #333; /* Background color for the button */
   color: white; /* Text color */
   border: none; /* Remove border */
@@ -317,34 +368,4 @@ body {
   justify-content: wrap; /* Center the button */
   width: 100%; /* Full width to take the line */
   margin-top: 10px; /* Space above the button */
-}
-
-.charlist-overlay {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  background: rgba(255, 255, 255, 0);
-  top: 75%;
-  left: -5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  padding: 10px;
-}
-
-.charlist-text {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.charlist-card{
-  position: relative;
-  display: inline-block;
-  margin: 10px;
-  width: 120px; /* Adjust based on image size */
-  height: auto; /* Adjust based on image size */
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
