@@ -5,6 +5,8 @@
 		}
 	],
 	"settings": {
-		"cSpell.enabled": false
+		"cSpell.enabled": false,
+		"editor.defaultColorDecorators": true,
+		"editor.experimentalInlineEdit.backgroundColoring": true
 	}
 }
