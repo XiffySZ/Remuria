@@ -9,7 +9,7 @@ const CharacterListCard = ({ image, charname, isCollapsed }) => {
         className={`character-image ${isCollapsed ? 'collapsed-image' : 'expanded-image'}`}
       />
       <div className="charlist-overlay">
-        <span className="charlist-text">{charname}</span>
+        <span className="charlist-text">{charname}</span>  {/* Display the character name */}
       </div>
     </div>
   );

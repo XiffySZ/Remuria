@@ -112,7 +112,7 @@ const Characters = ({ isCollapsed }) => {
       <CharListCard
         key={index}
         image={character.image}
-        charname={character.name}
+        charname={character.charname}
         isCollapsed={isCollapsed} // Pass isCollapsed prop to the card
         style={{ width: isCollapsed ? '60px' : '100px', height: isCollapsed ? '60px' : 'auto' }} // Adjust size based on isCollapsed
       />

@@ -40,14 +40,26 @@ body {
   overflow-y: auto; /* Enable vertical scrolling */
   max-height: calc(100vh - 150px); /* Adjust based on your layout */
   padding-top: 60px; /* Space for headers */
+  width: 100%; /* Full width for the container */
+}
+
+.fixed-scale {
+  width: 100%; /* Take 90% of the parent container width */
+  max-width: 1200px; /* Optional: set a maximum width */
+  height: auto; /* Height will adjust based on content */
+  margin: auto; /* Center the container */
+  transform: scale(1); /* Ensure no zooming or scaling */
 }
 
 .tier-list-grid {
   display: grid;
   grid-template-columns: 100px 1fr 1fr 1fr 1fr; /* Maintained previous width */
-  grid-gap: 0; /* Maintain no gap */
+  grid-gap: 10px; /* Maintain no gap */
   width: 100%; /* Kept original width */
   margin: 0 auto; /* Center the grid */
+  overflow: hidden;
+  transform: scale(1); /* Ensure no zooming or scaling */
+  transform-origin: top left; /* Anchor scaling from the top-left corner */
 }
 
 .grid-header {
@@ -57,7 +69,6 @@ body {
   color: white; /* Text color for headers */
   padding: 10px; /* Padding around the header */
   z-index: 10; /* Ensure headers are above content */
-  border-bottom: 1px solid #000000; /* Optional: Add border */
 }
 
 .main-dps-header{
@@ -114,6 +125,7 @@ body {
   justify-content: flex-start; /* Align the cards starting from the left */
   align-items: flex-start; /* Align cards to the top */
   margin-bottom: 10px;
+  gap: 10px; /* Space between cards */
 }
 
 .main-dps {
@@ -196,21 +208,25 @@ body {
 
 .charlist-overlay {
   position: absolute;
+  bottom: 0; /* Position overlay at the bottom */
   width: 100%;
-  height: auto; /* Adjust height as needed */
-  background: rgba(255, 255, 255, 0); /* Adjust overlay background as needed */
-  top: 75%;
-  left: 0; /* Center the overlay horizontally */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
   color: white;
-  padding: 10px;
+  z-index: 1;
 }
 
 .charlist-text {
-  font-size: 14px;
+  font-size: 11px;
   font-weight: bold;
+  color: white;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.charlist-card.collapsed .charlist-text {
+  font-size: 12px; /* Smaller text for collapsed */
 }
 
 .collapsed-image {
@@ -265,6 +281,53 @@ body {
   font-weight: bolder; /* Bold text for all tier headings */
   text-align: center;
   font-size: 24px;   
+}
+
+.tier-list-info {
+  margin-bottom: 20px;
+  background-color: #2a2a33;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Stack the heading and content vertically */
+}
+
+.tier-list-heading {
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  font-weight: bold;
+  align-items: center;
+  border-bottom: 1px solid #ccc; /* Thin border line */
+  padding-bottom: 10px; /* Adjust padding for spacing */
+}
+
+.tier-list-heading h3 {
+  margin: 0;
+  margin-right: 10px; /* Space between heading text and collapse icon */
+}
+
+.tier-list-heading span {
+  font-size: 20px;
+  transition: transform 0.3s ease-in-out; /* Smooth collapse transition */
+}
+
+/* Collapse Arrow */
+.collapse-icon.down {
+  transform: rotate(0deg);
+}
+
+.collapse-icon.up {
+  transform: rotate(180deg);
+}
+
+/* Expanded Content */
+.tier-list-expanded-content {
+  margin-top: 10px;
+  font-size: 14px;
+  color: white;
+  text-align: left;
 }
 
 .tags {
@@ -342,6 +405,8 @@ body {
 }
 
 .search-bar {
+  color: white;
+  border-color: black;
   padding: 11px; /* Padding inside the search bar */
   background-color: #333;
   border-radius: 8px; /* Rounded corners for the search bar */
@@ -349,6 +414,8 @@ body {
   max-width: 200px; /* Maximum width for the search bar */
   margin-left: 5px;
   margin-right: 0px; /* Space to the right of the search bar */
+  box-shadow: none;
+  outline: none;
 }
 
 .search-bar.expanded {
