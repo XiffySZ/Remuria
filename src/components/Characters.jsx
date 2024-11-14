@@ -19,8 +19,8 @@ const Characters = ({ isCollapsed }) => {
 
   // Function to handle search and filter
   const filteredCharacters = characterData.filter((character) => {
-    const name = character.name || '';
-    const matchesSearch = name.toLowerCase().includes(searchTerm.toLowerCase());
+    const charname = character.charname || '';
+    const matchesSearch = charname.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesRarity = rarityFilter === 'all' || character.rarity === rarityFilter;
     const matchesElement = elementFilter === 'all' || character.element === elementFilter;
     const matchesWeapon = weaponFilter === 'all' || character.weapon === weaponFilter;
@@ -30,6 +30,8 @@ const Characters = ({ isCollapsed }) => {
 
   return (
     <div className="characters-container">
+    <h2 className='char-heading'>Genshin Impact Characters</h2>
+    <p className='char-subheading'>A comprehensive list of all current playable Genshin Impact characters</p>
       <div className={`filters-container ${isCollapsed ? 'collapsed' : 'expanded'}`}>
         
         {/* Search Bar */}
@@ -38,7 +40,10 @@ const Characters = ({ isCollapsed }) => {
           placeholder="Search characters..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className={`search-bar ${isCollapsed ? 'collapsed' : 'expanded'}`} // Conditionally apply class
+          className={`search-bar ${isCollapsed ? 'collapsed' : 'expanded'}`}
+          style={{
+            width: isCollapsed ? '60%' : '100%', // Inline style for dynamic width change
+          }}
         />
         
         {/* Rarity Filter */}
