@@ -5,7 +5,6 @@ import '../styles.css';
 
 const TierList = () => {
   const [tierData, setTierData] = useState([]);
-  const [isCollapsed, setIsCollapsed] = useState(true);
   const [scale, setScale] = useState(1); // Correctly named state and setter
 
   useEffect(() => {
@@ -24,23 +23,38 @@ const TierList = () => {
     return () => window.removeEventListener('resize', handleZoom);
   }, []); // Empty dependency array to ensure this runs once after mount
 
-  const toggleCollapse = () => {
-    setIsCollapsed(!isCollapsed);
-  };
-
   return (
-    <>
-      {/* Tier List Info Section */}
-      <div className="tier-list-info">
-        <div className="tier-list-heading" onClick={toggleCollapse}>
-          <h3>Tier List Overview</h3>
-          <span className={`collapse-icon ${isCollapsed ? 'down' : 'up'}`}>&#9660;</span>
-        </div>
-        {!isCollapsed && (
-          <div className="tier-list-expanded-content">
-            <p>About the tier list: This tier list ranks characters based on their abilities, stats, and other factors...</p>
+    <div>
+      <h2 className='tier-list-heading'>Tier List</h2>
+      <p className='tier-list-subheading'>Genshin Impact 5.1 Tier List
+        </p>
+      {/* Bootstrap Accordion for Tier List Overview */}
+      <div className="accordion" id="tierListAccordion">
+        <div className="accordion-item">
+          <h2 className="accordion-header" id="headingOne">
+            <button
+              className="accordion-button bg-success text-white"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Tier List Overview
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            className="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#tierListAccordion"
+            style={{ backgroundColor: '#f2f2f2' }}
+          >
+            <div className="accordion-body">
+              <p style={{ margin:'8px', padding:'2px' }}>About the tier list: This tier list ranks characters based on their abilities, stats, and other factors...</p>
+            </div>
           </div>
-        )}
+        </div>
       </div>
 
       {/* Tier List Grid Section with dynamic scale */}
@@ -82,7 +96,7 @@ const TierList = () => {
           </React.Fragment>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

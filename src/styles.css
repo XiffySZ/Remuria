@@ -2,25 +2,25 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic');
 
 :root {
-  --content-margin-left: 140px; /* Default margin for expanded sidebar */
+  --content-margin-left: 180px; /* Default margin for expanded sidebar */
+  --content-margin-top: 30px; /* Default margin for expanded sidebar */
   
 }
 
 body {
-  font-family: Rubik , Kanit , sans-serif;
+  font-family: Rubik , Kanit , sans-serif !important; 
   background: #1d1c23 , height(1000px) , position(absolute),
-            top(0) , left(0) , width(100%), z-index(-5); /* Base background color */
-  margin: 0;
-  padding: 0;
+            top(0) , left(0) , width(100%), z-index(-5) !important; /* Base background color */
+  margin: 0 !important;
+  padding: 0 !important;
   background-image: 
     url('https://i.ibb.co/VxX50DZ/bg2.png'),/* Background image */
-    linear-gradient(180deg,transparent,#132065 80%);
-  background-blend-mode: multiply; /* Blend the image with the gradient */
-  background-position: 50% 0;
-  background-size: cover; /* Ensures the image covers the entire body */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-attachment: fixed;
-  
+    linear-gradient(180deg,transparent,#132065 80%) !important;
+  background-blend-mode: multiply !important; /* Blend the image with the gradient */
+  background-position: 50% 0 !important;
+  background-size: cover !important; /* Ensures the image covers the entire body */
+  background-repeat: no-repeat !important; /* Prevents the image from repeating */
+  background-attachment: fixed !important;
 }
 
 .App {
@@ -38,6 +38,7 @@ body {
 
 .content {
   margin-left: var(--content-margin-left);
+  margin-top: var(--content-margin-top);
   height: 100vh;
   flex-grow: 1; /* Allow content area to fill remaining space */
   padding: 20px; /* Add some padding around content */
@@ -74,6 +75,7 @@ body {
   overflow: hidden;
   transform: scale(1); /* Ensure no zooming or scaling */
   transform-origin: top left; /* Anchor scaling from the top-left corner */
+  margin-top: 15px;
 }
 
 .grid-header {
@@ -339,32 +341,79 @@ body {
 }
 
 .tier-list-heading {
-  display: flex;
-  justify-content: flex-start;
-  cursor: pointer;
-  font-weight: bold;
-  align-items: center;
-  border-bottom: 1px solid #ccc; /* Thin border line */
-  padding-bottom: 10px; /* Adjust padding for spacing */
+  color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  text-align: left;
 }
 
-.tier-list-heading h3 {
-  margin: 0;
-  margin-right: 10px; /* Space between heading text and collapse icon */
+.tier-list-subheading{
+  color: white;
+  font-size: 14px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-.tier-list-heading span {
-  font-size: 20px;
-  transition: transform 0.3s ease-in-out; /* Smooth collapse transition */
+
+#tierListAccordion {
+  --bs-accordion-border-color: transparent !important; /* Ensure no border color */
+  --bs-accordion-bg: transparent !important; /* Ensure no background color */
+  --bs-accordion-body-padding-x: 5px !important;
+  --bs-accordion-body-padding-y: 8px !important;
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
-/* Collapse Arrow */
-.collapse-icon.down {
-  transform: rotate(0deg);
+/* Set the background color when the accordion tab is collapsed */
+.accordion-button {
+  background-color: #444 !important; /* Force the background color */
+  color: white !important; /* Set the text color to white */
+  border: none !important; /* Remove the border */
+  box-shadow: none !important; /* Remove the box shadow */
+  outline: none !important; /* Remove the outline */
+  border-color: transparent !important; /* Ensure no border color */
+  font-size: 14px !important;
 }
 
-.collapse-icon.up {
-  transform: rotate(180deg);
+/* Change color of FontAwesome icon used in accordion button */
+.accordion-button .fa {
+  color: white !important; /* Set the FontAwesome icon color to white */
+}
+
+/* Hover color when hovering over the accordion tab */
+.accordion-button:hover {
+  background-color: #555 !important; /* Darker grey when hovered */
+}
+
+/* Active (expanded) accordion tab color */
+.accordion-button:not(.collapsed) {
+  background-color: #333 !important; /* Darker grey when tab is expanded */
+  color: white !important; /* White text when expanded */
+  border-color: transparent !important; /* Ensure no border color */
+}
+
+/* Remove green background and border in collapsed state (even if using Bootstrap defaults) */
+.accordion-button.collapsed {
+  background-color: #444 !important; /* Force the background color */
+  border-color: transparent !important; /* Remove the green border */
+}
+
+/* Accordion body background color */
+.accordion-body {
+  background-color: #444 !important; /* Light grey background for the body */
+  color: white !important; /* Dark text for the body */
+  text-align: left !important; /* Align text to the left */
+  padding: 5px !important; 
+  font-size: 12px !important;
+}
+
+/* Remove focus outline and border */
+.accordion-button:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: transparent !important; /* Ensure no border color on focus */
 }
 
 /* Expanded Content */

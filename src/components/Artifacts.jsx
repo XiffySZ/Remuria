@@ -54,7 +54,8 @@ const Artifacts = ({ isCollapsed }) => {
   return (
     <div>
       <h2 className='arti-heading'>Artifacts</h2>
-      <p className='arti-subheading'>Discover the various artifacts that can enhance your characters' performance and abilities.</p>
+      <p className='arti-subheading'>Discover the various artifacts that can enhance your characters' 
+        performance and abilities.</p>
 
       {/* Search bar and rarity filter */}
       <div className={`arti-filters-container ${isCollapsed ? 'collapsed' : 'expanded'}`}>

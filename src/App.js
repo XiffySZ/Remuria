@@ -6,6 +6,9 @@ import Characters from './components/Characters';
 import Artifacts from './components/Artifacts';
 import About from './components/About';
 import Sidebar from './components/Sidebar';
+import Dashbar from './components/Dashbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function App() {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -30,10 +33,10 @@ function App() {
 
   return (
     <div className="App">
+      <Dashbar isCollapsed={isCollapsed} setIsCollapsed={setIsCollapsed} />
       <Sidebar 
         setCurrentPage={setCurrentPage} 
-        isCollapsed={isCollapsed}  // Pass isCollapsed to Sidebar
-        setIsCollapsed={setIsCollapsed} // Pass setIsCollapsed to Sidebar
+        isCollapsed={isCollapsed} // Pass isCollapsed to Sidebar
       />
       <div className="content">
         {renderPage()}

@@ -1,21 +1,10 @@
 import React from 'react';
-import '../Sidebar.css'; 
+import '../Sidebar.css';
 import { FaHome, FaUserFriends, FaGem, FaListAlt, FaInfoCircle } from 'react-icons/fa';
 
-const Sidebar = ({ setCurrentPage, isCollapsed, setIsCollapsed }) => {
-  const toggleSidebar = () => {
-    setIsCollapsed(!isCollapsed);
-  };
-
+const Sidebar = ({ setCurrentPage, isCollapsed }) => {
   return (
     <div className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
-      <button 
-        className="collapse-btn" 
-        onClick={toggleSidebar}
-        aria-label={isCollapsed ? 'Expand Sidebar' : 'Collapse Sidebar'}
-      >
-        {isCollapsed ? '>' : '<'}
-      </button>
       <ul className="sidebar-list">
         <li className="sidebar-item" onClick={() => setCurrentPage('home')}>
           <FaHome className="icon" /> 
