@@ -221,19 +221,6 @@ body {
   filter: contrast(90%) brightness(105%);
 }
 
-
-
-.charlist-overlay {
-  position: absolute;
-  bottom: 0; /* Position overlay at the bottom */
-  width: 100%;
-  text-align: center;
-  margin-bottom: 6px;
-  padding-bottom: 4px;
-  color: white;
-  z-index: 1;
-}
-
 .charlist-text {
   font-size: 11px;
   font-weight: bold;
