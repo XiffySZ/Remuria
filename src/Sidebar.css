@@ -7,14 +7,20 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  font-size: small;
-  width: 180px; /* Width of the sidebar */
+  font-size: 12px;
+  width: 200px; /* Width of the sidebar */
   background-color: #2a2a33; /* Sidebar background color */
   color: #d0bc91;
-  height: 335vh; /* Full height */
+  height: 100vh; /* Full height */
   display: flex;
   flex-direction: column;
   margin-top: 50px;
+  justify-content: space-between;
+}
+
+.sidebar-item.selected {
+  background-color: #2f2f49; /* Change to your desired color */
+  color: #d0bc91; /* Change to your desired text color */
 }
 
 .dashbar {
@@ -58,7 +64,7 @@ body {
 .collapse-btn {
   position: absolute;
   top: 5px;
-  left: 180px;
+  left: 200px;
   transform: rotate(-360deg);
   background-color: transparent;
   border: none;
@@ -88,7 +94,7 @@ body {
   width: 1px;
   height: 50px; /* Adjust height as needed */
   background-color: #d0bc91; /* Line color */
-  margin: 164px; /* Add spacing between the title and button */
+  margin: 184px; /* Add spacing between the title and button */
 }
 
 .divider.collapsed{
@@ -103,11 +109,12 @@ body {
 .sidebar-list {
   list-style: none;
   padding: 0px;
+  flex-grow: 1; /* Expand list to fill available space */
 }
 
 /* Sidebar item styles */
 .sidebar-item {
-  padding-left: 40px; /* Consistent padding */
+  padding-left: 30px; /* Consistent padding */
   transition: opacity 0.3s ease;
   cursor: pointer;
   margin: 0px; /* Adjust margin to reduce vertical spacing */
@@ -115,10 +122,6 @@ body {
   align-items: center; /* Center items vertically */
   justify-content: flex-start; /* Align items to start (left) */
   height: 40px; /* Fixed height for items */
-}
-
-.sidebar-list .sidebar-item:first-child {
-  margin-top: 5px; /* Adjust the value as needed */
 }
 
 /* Hide text when sidebar is collapsed */
@@ -155,12 +158,23 @@ body {
 
 /* Icon styles */
 .sidebar-item svg {
-  width: 20px; /* Adjust icon size as needed */
+  width: 15px; /* Adjust icon size as needed */
   height: auto; /* Adjust icon size as needed */
+}
+
+.sidebar-line {
+  width: 100%;
+  height: 1px;
+  background-color: #d0bc91; /* Line color */
+  margin: 10px 0; /* Adjust spacing above and below the line */
 }
 
 /* Adjust collapsed icon size for consistency */
 .sidebar.collapsed .sidebar-item svg {
-  width: 20px; /* Slightly increase size to maintain visibility */
+  width: 15px; /* Slightly increase size to maintain visibility */
   height: auto; /* Maintain aspect ratio */
+}
+
+.last-item {
+  margin-top: auto; /* Push this item to the bottom of the sidebar */
 }

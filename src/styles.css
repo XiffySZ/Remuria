@@ -221,6 +221,8 @@ body {
   filter: contrast(90%) brightness(105%);
 }
 
+
+
 .charlist-overlay {
   position: absolute;
   bottom: 0; /* Position overlay at the bottom */
@@ -368,7 +370,7 @@ body {
 
 /* Set the background color when the accordion tab is collapsed */
 .accordion-button {
-  background-color: #444 !important; /* Force the background color */
+  background-color: #2f2f49 !important; /* Force the background color */
   color: white !important; /* Set the text color to white */
   border: none !important; /* Remove the border */
   box-shadow: none !important; /* Remove the box shadow */
@@ -389,20 +391,20 @@ body {
 
 /* Active (expanded) accordion tab color */
 .accordion-button:not(.collapsed) {
-  background-color: #333 !important; /* Darker grey when tab is expanded */
+  background-color: #2a2a33 !important; /* Darker grey when tab is expanded */
   color: white !important; /* White text when expanded */
   border-color: transparent !important; /* Ensure no border color */
 }
 
 /* Remove green background and border in collapsed state (even if using Bootstrap defaults) */
 .accordion-button.collapsed {
-  background-color: #444 !important; /* Force the background color */
+  background-color: #2a2a33 !important; /* Force the background color */
   border-color: transparent !important; /* Remove the green border */
 }
 
 /* Accordion body background color */
 .accordion-body {
-  background-color: #444 !important; /* Light grey background for the body */
+  background-color: #2f2f49 !important; /* Light grey background for the body */
   color: white !important; /* Dark text for the body */
   text-align: left !important; /* Align text to the left */
   padding: 5px !important; 
@@ -484,7 +486,7 @@ body {
   width: auto;
   margin: 0px; /* Space between filter boxes */
   padding: 5px; /* Padding inside the filter box */
-  background-color: #333; /* Background color for filter box */
+  background-color: #2f2f49; /* Background color for filter box */
   border-radius: 8px; /* Rounded corners for filter box */
 }
 
@@ -492,8 +494,8 @@ body {
   width: auto;
   margin-left: 12px; /* Space between filter boxes */
   margin-right: 5px; /* Space between filter boxes */
-  padding: 5px; /* Padding inside the filter box */
-  background-color: #333; /* Background color for filter box */
+  padding: 6px; /* Padding inside the filter box */
+  background-color: #2f2f49; /* Background color for filter box */
   border-radius: 8px; /* Rounded corners for filter box */
 }
 
@@ -511,7 +513,7 @@ body {
 
 .arti-reset-button {
   font-size: 14px;
-  padding: 10px; /* Add some padding */
+  padding: 12px; /* Add some padding */
   background-color: #333; /* Background color for the button */
   color: white; /* Text color */
   border: none; /* Remove border */
@@ -541,14 +543,15 @@ body {
 }
 
 .filter-option.active {
-  background-color: #555; /* Active option background */
-  border-color: #fff; /* Active option border color */
+  background-color: #333;
+  border-radius: 8px; /* Active option background */
+  border: 1px solid #111; /* Border for active option */
 }
 
 .search-bar {
   color: white;
   padding: 11px; /* Padding inside the search bar */
-  background-color: #333;
+  background-color: #2f2f49;
   border-radius: 8px; /* Rounded corners for the search bar */
   width: 100%; /* Full width to fill the container */
   max-width: 200px; /* Maximum width for the search bar */
@@ -556,6 +559,7 @@ body {
   margin-right: 0px; /* Space to the right of the search bar */
   box-shadow: none;
   outline: none;
+  border: none;
 }
 
 .search-container{
@@ -569,14 +573,15 @@ body {
   color: white;
   text-align: left;
   padding: 11px; /* Padding inside the search bar */
-  background-color: #333;
+  background-color: #2f2f49;
   border-radius: 8px; /* Rounded corners for the search bar */
-  width: 100%; /* Full width to fill the container */
+  width: 60%; /* Full width to fill the container */
   max-width: 610px; /* Maximum width for the search bar */
   margin-left: 5px;
   margin-right: 0px; /* Space to the right of the search bar */
   box-shadow: none;
   outline: none;
+  border:none;
 }
 
 .arti-reset-button:hover {
@@ -614,7 +619,7 @@ body {
 }
 
 .artifacts-table th {
-  background-color: #36373f;
+  background-color: #2f2f49;
 }
 
 .artifacts-table tbody tr:nth-child(odd) {

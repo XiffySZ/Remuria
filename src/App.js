@@ -7,6 +7,7 @@ import Artifacts from './components/Artifacts';
 import About from './components/About';
 import Sidebar from './components/Sidebar';
 import Dashbar from './components/Dashbar';
+import Weapons from './components/Weapons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -17,17 +18,19 @@ function App() {
   const renderPage = () => {
     switch (currentPage) {
       case 'home':
-        return <Home />;
+        return <Home setCurrentPage={setCurrentPage} />;
       case 'characters':
-        return <Characters isCollapsed={isCollapsed} />; // Pass isCollapsed to Characters
+        return <Characters isCollapsed={isCollapsed} />;
       case 'artifacts':
         return <Artifacts />;
+      case 'weapons':
+        return <Weapons />;
       case 'tierList':
         return <TierList />;
       case 'about':
         return <About />;
       default:
-        return <Home />;
+        return <Home setCurrentPage={setCurrentPage} />;
     }
   };
 
@@ -36,7 +39,8 @@ function App() {
       <Dashbar isCollapsed={isCollapsed} setIsCollapsed={setIsCollapsed} />
       <Sidebar 
         setCurrentPage={setCurrentPage} 
-        isCollapsed={isCollapsed} // Pass isCollapsed to Sidebar
+        currentPage={currentPage} 
+        isCollapsed={isCollapsed} 
       />
       <div className="content">
         {renderPage()}

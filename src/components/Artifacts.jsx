@@ -79,7 +79,7 @@ const Artifacts = ({ isCollapsed }) => {
         </div>
 
         {/* Reset Button */}
-        <button onClick={resetFilters} className={`reset-button ${isCollapsed ? 'collapsed' : ''}`}>
+        <button onClick={resetFilters} className={`arti-reset-button ${isCollapsed ? 'collapsed' : ''}`}>
           {isCollapsed ? 'Reset' : 'Reset'}
         </button>
       </div>

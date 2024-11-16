@@ -2,127 +2,127 @@
   {
     "tier": "T0",
     "mainDPS": [
-      { "image": "/images/tierlist/alhaitham.png", "tags": [] },
-      { "image": "/images/tierlist/neuvilette.png", "tags": [] },
-      { "image": "/images/tierlist/arlecchino.png", "tags": [] }
+      { "charname": "Alhaitham", "image": "/images/tierlist/alhaitham.png", "tags": [] },
+      { "charname": "Neuvilette", "image": "/images/tierlist/neuvilette.png", "tags": [] },
+      { "charname": "Arlecchino", "image": "/images/tierlist/arlecchino.png", "tags": [] }
     ],
     "subDPS": [
-      { "image": "/images/tierlist/emilie.png", "tags": [] },
-      { "image": "/images/tierlist/furina.png", "tags": [] },
-      { "image": "/images/tierlist/yelan.png", "tags": [] },
-      { "image": "/images/tierlist/xingqiu.png", "tags": [] },
-      { "image": "/images/tierlist/fischl.png", "tags": [] }
+      { "charname": "Emilie", "image": "/images/tierlist/emilie.png", "tags": [] },
+      { "charname": "Furina", "image": "/images/tierlist/furina.png", "tags": [] },
+      { "charname": "Yelan", "image": "/images/tierlist/yelan.png", "tags": [] },
+      { "charname": "Xingqiu", "image": "/images/tierlist/xingqiu.png", "tags": [] },
+      { "charname": "Fischl", "image": "/images/tierlist/fischl.png", "tags": [] }
     ],
     "amplifiers": [
-      { "image": "/images/tierlist/bennett.png", "tags": [] },
-      { "image": "/images/tierlist/xilonen.png", "tags": [] },
-      { "image": "/images/tierlist/kazuha.png", "tags": [] }
+      { "charname": "Bennett", "image": "/images/tierlist/bennett.png", "tags": [] },
+      { "charname": "Xilonen", "image": "/images/tierlist/xilonen.png", "tags": [] },
+      { "charname": "Kazuha", "image": "/images/tierlist/kazuha.png", "tags": [] }
     ],
     "sustain": [
-      { "image": "/images/tierlist/zhongli.png", "tags": [] },
-      { "image": "/images/tierlist/kokomi.png", "tags": [] }
+      { "charname": "Zhongli", "image": "/images/tierlist/zhongli.png", "tags": [] },
+      { "charname": "Kokomi", "image": "/images/tierlist/kokomi.png", "tags": [] }
     ]
   },
   {
     "tier": "T0.5",
     "mainDPS": [
-      { "image": "/images/tierlist/hutao.png", "tags": [] },
-      { "image": "/images/tierlist/navia.png", "tags": [] },
-      { "image": "/images/tierlist/mualani.png", "tags": [] },
-      { "image": "/images/tierlist/kinich.png", "tags": [] }
+      { "charname": "Hutao", "image": "/images/tierlist/hutao.png", "tags": [] },
+      { "charname": "Navia", "image": "/images/tierlist/navia.png", "tags": [] },
+      { "charname": "Mualani", "image": "/images/tierlist/mualani.png", "tags": [] },
+      { "charname": "Kinich", "image": "/images/tierlist/kinich.png", "tags": [] }
     ],
     "subDPS": [
-      { "image": "/images/tierlist/xiangling.png", "tags": [] },
-      { "image": "/images/tierlist/raiden.png", "tags": [] }
+      { "charname": "Xiangling", "image": "/images/tierlist/xiangling.png", "tags": [] },
+      { "charname": "Raiden", "image": "/images/tierlist/raiden.png", "tags": [] }
     ],
     "amplifiers": [
-      { "image": "/images/tierlist/sucrose.png", "tags": [] },
-      { "image": "/images/tierlist/nahida.png", "tags": [] }
+      { "charname": "Sucrose", "image": "/images/tierlist/sucrose.png", "tags": [] },
+      { "charname": "Nahida", "image": "/images/tierlist/nahida.png", "tags": [] }
     ],
     "sustain": [
-      { "image": "/images/tierlist/baizhu.png", "tags": [] }
+      { "charname": "Baizhu", "image": "/images/tierlist/baizhu.png", "tags": [] }
     ]
   },
   {
     "tier": "T1",
     "mainDPS": [
-      { "image": "/images/tierlist/clorinde.png", "tags": [] },
-      { "image": "/images/tierlist/lyney.png", "tags": [] },
-      { "image": "/images/tierlist/xiao.png", "tags": [] },
-      { "image": "/images/tierlist/nilou.png", "tags": [] },
-      { "image": "/images/tierlist/yoimiya.png", "tags": [] },
-      { "image": "/images/tierlist/gaming.png", "tags": [] }
+      { "charname": "Clorinde", "image": "/images/tierlist/clorinde.png", "tags": [] },
+      { "charname": "Lyney", "image": "/images/tierlist/lyney.png", "tags": [] },
+      { "charname": "Xiao", "image": "/images/tierlist/xiao.png", "tags": [] },
+      { "charname": "Nilou", "image": "/images/tierlist/nilou.png", "tags": [] },
+      { "charname": "Yoimiya", "image": "/images/tierlist/yoimiya.png", "tags": [] },
+      { "charname": "Gaming", "image": "/images/tierlist/gaming.png", "tags": [] }
     ],
     "subDPS": [
-      { "image": "/images/tierlist/yae miko.png", "tags": [] }
+      { "charname": "Yae Miko", "image": "/images/tierlist/yae miko.png", "tags": [] }
     ],
     "amplifiers": [
-      { "image": "/images/tierlist/xianyun.png", "tags": [] }
+      { "charname": "Xianyun", "image": "/images/tierlist/xianyun.png", "tags": [] }
     ],
     "sustain": [
-      { "image": "/images/tierlist/kuki.png", "tags": [] },
-      { "image": "/images/tierlist/jean.png", "tags": [] }
+      { "charname": "Kuki", "image": "/images/tierlist/kuki.png", "tags": [] },
+      { "charname": "Jean", "image": "/images/tierlist/jean.png", "tags": [] }
     ]
   },
   {
     "tier": "T2",
     "mainDPS": [
-      { "image": "/images/tierlist/wrio.png", "tags": [] },
-      { "image": "/images/tierlist/itto.png", "tags": [] },
-      { "image": "/images/tierlist/keqing.png", "tags": [] },
-      { "image": "/images/tierlist/tighnari.png", "tags": [] },
-      { "image": "/images/tierlist/tartaglia.png", "tags": [] },
-      { "image": "/images/tierlist/wanderer.png", "tags": [] },
-      { "image": "/images/tierlist/yanfei.png", "tags": [] },
-      { "image": "/images/tierlist/cyno.png", "tags": [] }
+      { "charname": "Wrio", "image": "/images/tierlist/wrio.png", "tags": [] },
+      { "charname": "Itto", "image": "/images/tierlist/itto.png", "tags": [] },
+      { "charname": "Keqing", "image": "/images/tierlist/keqing.png", "tags": [] },
+      { "charname": "Tighnari", "image": "/images/tierlist/tighnari.png", "tags": [] },
+      { "charname": "Tartaglia", "image": "/images/tierlist/tartaglia.png", "tags": [] },
+      { "charname": "Wanderer", "image": "/images/tierlist/wanderer.png", "tags": [] },
+      { "charname": "Yanfei", "image": "/images/tierlist/yanfei.png", "tags": [] },
+      { "charname": "Cyno", "image": "/images/tierlist/cyno.png", "tags": [] }
     ],
     "subDPS": [
-      { "image": "/images/tierlist/beidou.png", "tags": [] }
+      { "charname": "Beidou", "image": "/images/tierlist/beidou.png", "tags": [] }
     ],
     "amplifiers": [
-      { "image": "/images/tierlist/collei.png", "tags": [] }
+      { "charname": "Collei", "image": "/images/tierlist/collei.png", "tags": [] }
     ],
     "sustain": []
   },
   {
     "tier": "T3",
     "mainDPS": [
-      { "image": "/images/tierlist/ayaka.png", "tags": [] },
-      { "image": "/images/tierlist/ganyu.png", "tags": [] },
-      { "image": "/images/tierlist/heizou.png", "tags": [] },
-      { "image": "/images/tierlist/sethos.png", "tags": [] }
+      { "charname": "Ayaka", "image": "/images/tierlist/ayaka.png", "tags": [] },
+      { "charname": "Ganyu", "image": "/images/tierlist/ganyu.png", "tags": [] },
+      { "charname": "Heizou", "image": "/images/tierlist/heizou.png", "tags": [] },
+      { "charname": "Sethos", "image": "/images/tierlist/sethos.png", "tags": [] }
     ],
     "subDPS": [
-      { "image": "/images/tierlist/kayea.png", "tags": [] }
+      { "charname": "Kayea", "image": "/images/tierlist/kayea.png", "tags": [] }
     ],
     "amplifiers": [
-      { "image": "/images/tierlist/kachina.png", "tags": [] }
+      { "charname": "Kachina", "image": "/images/tierlist/kachina.png", "tags": [] }
     ],
     "sustain": []
   },
   {
     "tier": "T4",
     "mainDPS": [
-      { "image": "/images/tierlist/eula.png", "tags": [] },
-      { "image": "/images/tierlist/ninnguang.png", "tags": [] },
-      { "image": "/images/tierlist/klee.png", "tags": [] },
-      { "image": "/images/tierlist/noelle.png", "tags": [] },
-      { "image": "/images/tierlist/razor.png", "tags": [] }
+      { "charname": "Eula", "image": "/images/tierlist/eula.png", "tags": [] },
+      { "charname": "Ninnguang", "image": "/images/tierlist/ninnguang.png", "tags": [] },
+      { "charname": "Klee", "image": "/images/tierlist/klee.png", "tags": [] },
+      { "charname": "Noelle", "image": "/images/tierlist/noelle.png", "tags": [] },
+      { "charname": "Razor", "image": "/images/tierlist/razor.png", "tags": [] }
     ],
     "subDPS": [
-      { "image": "/images/tierlist/chongyun.png", "tags": [] }
+      { "charname": "Chongyun", "image": "/images/tierlist/chongyun.png", "tags": [] }
     ],
     "amplifiers": [
-      { "image": "/images/tierlist/barbara.png", "tags": [] }
+      { "charname": "Barbara", "image": "/images/tierlist/barbara.png", "tags": [] }
     ],
     "sustain": []
   },
   {
     "tier": "T5",
     "mainDPS": [
-      { "image": "/images/tierlist/amber.png", "tags": [] },
-      { "image": "/images/tierlist/freminet.png", "tags": [] },
-      { "image": "/images/tierlist/xinyan.png", "tags": [] }
+      { "charname": "Amber", "image": "/images/tierlist/amber.png", "tags": [] },
+      { "charname": "Freminet", "image": "/images/tierlist/freminet.png", "tags": [] },
+      { "charname": "Xinyan", "image": "/images/tierlist/xinyan.png", "tags": [] }
     ],
     "subDPS": [],
     "amplifiers": [],
