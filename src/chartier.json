@@ -2,9 +2,9 @@
   {
     "tier": "T0",
     "mainDPS": [
-      { "image": "/images/tierlist/alhaitham.png", "tags": [] },
-      { "image": "/images/tierlist/neuvilette.png", "tags": [] },
-      { "image": "/images/tierlist/arlecchino.png", "tags": [] }
+      { "image": "/images/tierlist/alhaitham.png", "tags": ["AOE"] },
+      { "image": "/images/tierlist/neuvilette.png", "tags": ["AOE"] },
+      { "image": "/images/tierlist/arlecchino.png", "tags": ["CLEAVE"] }
     ],
     "subDPS": [
       { "image": "/images/tierlist/emilie.png", "tags": [] },
