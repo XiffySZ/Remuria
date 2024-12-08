@@ -616,3 +616,31 @@ body {
 .artifacts-table tbody tr:nth-child(even) {
   background-color: #36373f; /* Color for even rows */
 }
+
+/* Base style for tags */
+.character-tag {
+  margin: 5px;
+  font-size: 9px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Tag-specific styles */
+.tag-aoe, .tag-cleave, .tag-st {
+  color: white; /* Red for AOE */
+}
+
+.tag-buff, .tag-debuff, .tag-shield, .tag-heal, .tag-cc {
+  color: #4caf50; /* Green for Buff */
+}
+
+.tag-cancel .tag-rotation {
+  color: #f44336; /* Red for Debuff */
+}
+
+.tag-reaction .tag-multirole {
+  color: #2196f3; /* Red for Debuff */
+}
+/* Add more styles for additional tags as needed */

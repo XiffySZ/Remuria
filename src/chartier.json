@@ -7,7 +7,7 @@
       { "image": "/images/tierlist/arlecchino.png", "tags": ["CLEAVE"] }
     ],
     "subDPS": [
-      { "image": "/images/tierlist/emilie.png", "tags": [] },
+      { "image": "/images/tierlist/emilie.png", "tags": ["BUFF"] },
       { "image": "/images/tierlist/furina.png", "tags": [] },
       { "image": "/images/tierlist/yelan.png", "tags": [] },
       { "image": "/images/tierlist/xingqiu.png", "tags": [] },

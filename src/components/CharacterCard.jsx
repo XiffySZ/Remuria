@@ -6,10 +6,12 @@ const CharacterCard = ({ image, tags }) => {
       {/* Character Image */}
       <img src={image} alt="Character" className="character-image" />
 
-      {/* Tags or other info */}
+      {/* Tags */}
       <div className="character-tags">
         {tags && tags.map((tag, index) => (
-          <span key={index} className="character-tag">{tag}</span>
+          <span key={index} className={`character-tag tag-${tag.toLowerCase()}`}>
+            {tag}
+          </span>
         ))}
       </div>
     </div>
