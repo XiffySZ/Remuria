@@ -5,22 +5,10 @@ import '../styles.css';
 
 const TierList = () => {
   const [tierData, setTierData] = useState([]);
-  const [scale, setScale] = useState(1); // Correctly named state and setter
 
   useEffect(() => {
     setTierData(characterData);
-
-    // Listener to detect zoom level and adjust scale
-    const handleZoom = () => {
-      const zoomLevel = window.devicePixelRatio;
-      setScale(1 / zoomLevel); // Adjust scale to counteract zoom
-    };
-
-    window.addEventListener('resize', handleZoom);
-    handleZoom(); // Initialize scale on component mount
-
     // Clean up event listener on component unmount
-    return () => window.removeEventListener('resize', handleZoom);
   }, []); // Empty dependency array to ensure this runs once after mount
 
   return (
@@ -58,7 +46,7 @@ const TierList = () => {
       </div>
 
       {/* Tier List Grid Section with dynamic scale */}
-      <div className={`tier-list-grid fixed-scale scale-${scale}`}>
+      <div className={'tier-list-grid'}>
         <div className="grid-header"></div>
         <div className="grid-header main-dps-header">MAIN DPS</div>
         <div className="grid-header sub-dps-header">SUB DPS</div>

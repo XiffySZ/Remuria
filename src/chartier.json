@@ -3,8 +3,8 @@
     "tier": "T0",
     "mainDPS": [
       { "image": "/images/tierlist/alhaitham.png", "tags": ["AOE"], "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/neuvilette.png", "tags": ["AOE"], "overlay":"/images/elements-col/dendro.png" },
-      { "image": "/images/tierlist/arlecchino.png", "tags": ["CLEAVE"], "overlay":"/images/elements-col/dendro.png" }
+      { "image": "/images/tierlist/neuvilette.png", "tags": ["AOE"], "overlay":"/images/elements-col/hydro.png" },
+      { "image": "/images/tierlist/arlecchino.png", "tags": ["CLEAVE"], "overlay":"/images/elements-col/pyro.png" }
     ],
     "subDPS": [
       { "image": "/images/tierlist/emilie.png", "tags": ["BUFF","REACTION"], "overlay":"/images/elements-col/dendro.png" },

@@ -58,20 +58,12 @@ body {
   width: 100%; /* Full width for the container */
 }
 
-.fixed-scale {
-  width: 100%; /* Take 90% of the parent container width */
-  max-width: 1600px; /* Limit the maximum width */
-  height: auto; /* Height will adjust based on content */
-  margin: auto; /* Center the container */
-  transform: scale(1); /* Ensure no zooming or scaling */
-}
 
 .tier-list-grid {
   display: grid;
   grid-template-columns: 50px 1fr 1fr 1fr 1fr; /* Maintained previous width */
   width: 100%; /* Kept original width */
   overflow: hidden;
-  transform: scale(1); /* Ensure no zooming or scaling */
   transform-origin: top left; /* Anchor scaling from the top-left corner */
   margin-top: 15px;
 }
@@ -245,8 +237,8 @@ body {
 
 .character-overlay {
   position: absolute; /* Allow positioning relative to .character-card */
-  top: 1px; /* Position the overlay */
-  left: 1px; /* Position the overlay */
+  top: 2px; /* Position the overlay */
+  left: 3px; /* Position the overlay */
   width: 20px; /* Customize the size */
   height: 20px; /* Customize the size */
   z-index: 1; /* Ensure overlay appears above the character image */
@@ -553,8 +545,7 @@ body {
   background-color: #2f2f49;
   border-radius: 8px; /* Rounded corners for the search bar */
   width: 100%; /* Full width to fill the container */
-  max-width: 200px; /* Maximum width for the search bar */
-  margin-left: 5px;
+  max-width: 350px; /* Maximum width for the search bar */
   margin-right: 0px; /* Space to the right of the search bar */
   box-shadow: none;
   outline: none;
@@ -575,7 +566,22 @@ body {
   background-color: #2f2f49;
   border-radius: 8px; /* Rounded corners for the search bar */
   width: 60%; /* Full width to fill the container */
-  max-width: 610px; /* Maximum width for the search bar */
+  max-width: 800px; /* Maximum width for the search bar */
+  margin-left: 5px;
+  margin-right: 0px; /* Space to the right of the search bar */
+  box-shadow: none;
+  outline: none;
+  border:none;
+}
+
+.arti-search-bar.expanded{
+  color: white;
+  text-align: left;
+  padding: 11px; /* Padding inside the search bar */
+  background-color: #2f2f49;
+  border-radius: 8px; /* Rounded corners for the search bar */
+  width: 60%; /* Full width to fill the container */
+  max-width: 800px; /* Maximum width for the search bar */
   margin-left: 5px;
   margin-right: 0px; /* Space to the right of the search bar */
   box-shadow: none;

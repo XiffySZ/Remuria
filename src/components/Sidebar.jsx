@@ -22,7 +22,7 @@ const Sidebar = ({ setCurrentPage, currentPage, isCollapsed }) => {
   ];
 
   return (
-    <div className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
+    <div className={`sidebar ${isCollapsed ? 'collapsed' : 'expanded'}`}>
       <ul className="sidebar-list">
         {sidebarItems.map((item) => (
           <li
