@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic');
 
 :root {
-  --content-margin-left: 180px; /* Default margin for expanded sidebar */
+  --content-margin-left: 160px; /* Default margin for expanded sidebar */
   --content-margin-top: 30px; /* Default margin for expanded sidebar */
   
 }
@@ -47,7 +47,7 @@ body {
 }
 
 .sidebar.collapsed ~ .content {
-  margin-left: 100px; /* Adjust margin for collapsed sidebar */
+  margin-left: 70px; /* Adjust margin for collapsed sidebar */
 }
 
 .tier-list-container {
@@ -60,7 +60,7 @@ body {
 
 .fixed-scale {
   width: 100%; /* Take 90% of the parent container width */
-  max-width: 1200px; /* Optional: set a maximum width */
+  max-width: 1600px; /* Limit the maximum width */
   height: auto; /* Height will adjust based on content */
   margin: auto; /* Center the container */
   transform: scale(1); /* Ensure no zooming or scaling */
@@ -68,10 +68,8 @@ body {
 
 .tier-list-grid {
   display: grid;
-  grid-template-columns: 100px 1fr 1fr 1fr 1fr; /* Maintained previous width */
-  grid-gap: 10px; /* Maintain no gap */
+  grid-template-columns: 50px 1fr 1fr 1fr 1fr; /* Maintained previous width */
   width: 100%; /* Kept original width */
-  margin: 0 auto; /* Center the grid */
   overflow: hidden;
   transform: scale(1); /* Ensure no zooming or scaling */
   transform-origin: top left; /* Anchor scaling from the top-left corner */
@@ -89,7 +87,7 @@ body {
 .main-dps-header{
   background-color: #2c2d33;
   color: rgb(180, 0, 0);
-  font-size: 16px; /* Adjust font size as needed */
+  font-size: 12px; /* Adjust font size as needed */
   margin-bottom: 5px;
   font-weight: bold;
 }
@@ -97,7 +95,7 @@ body {
 .amplifiers-header {
   background-color: #2c2d33;
   color: peru;
-  font-size: 16px; /* Adjust font size as needed */
+  font-size: 12px; /* Adjust font size as needed */
   margin-bottom: 5px;
   font-weight: bold;
 }
@@ -105,7 +103,7 @@ body {
 .sub-dps-header {
   background-color: #36373f;
   color: rgba(0, 255, 255, 0.799);
-  font-size: 18px; /* Adjust font size as needed */
+  font-size: 12px; /* Adjust font size as needed */
   margin-bottom: 5px;
   font-weight: bold;
 }
@@ -113,7 +111,7 @@ body {
 .sustain-header {
   background-color: #36373f;
   color: lightgreen;
-  font-size: 18px; /* Adjust font size as needed */
+  font-size: 12px; /* Adjust font size as needed */
   margin-bottom: 5px;
   font-weight: bold;
 }
@@ -122,7 +120,6 @@ body {
   background-color: #222;
   color: white;
   text-align: center;
-  padding: 10px; /* Original padding */
   font-size: 18px; /* Original font size */
   border-bottom: 1px solid #000000;
   display: flex; /* Added flexbox */
@@ -136,11 +133,11 @@ body {
   text-align: left;
   border-bottom: 1px solid #000000;
   display: flex;
+  gap: 0px;
   flex-wrap: wrap;
   justify-content: flex-start; /* Align the cards starting from the left */
   align-items: flex-start; /* Align cards to the top */
   margin-bottom: 10px;
-  gap: 10px; /* Space between cards */
 }
 
 .main-dps {
@@ -189,15 +186,14 @@ body {
 }
 
 .character-card { /*For TierList component */
+  position: relative;
   display: inline-block;
   border-radius: 10px;
   padding: 3px; /* Original padding */
-  width: 50px; /* Original width for proper card size */
-  height: 50px; /* Ensure uniform height for all cards */
+  width: 77px; /* Original width for proper card size */
+  height: auto; /* Ensure uniform height for all cards */
   text-align: center;
-  margin-bottom: 50px; /* Add vertical margin */
 }
-
 
 .charlist-card {
   position: relative;
@@ -247,13 +243,24 @@ body {
   filter: contrast(90%) brightness(105%);
 }
 
+.character-overlay {
+  position: absolute; /* Allow positioning relative to .character-card */
+  top: 1px; /* Position the overlay */
+  left: 1px; /* Position the overlay */
+  width: 20px; /* Customize the size */
+  height: 20px; /* Customize the size */
+  z-index: 1; /* Ensure overlay appears above the character image */
+  pointer-events: none; /* Prevent interaction with the overlay */
+}
+
+
 /* Increase top margin for cards in the first row */
-.grid-cell > .character-card:nth-child(-n+3) { /* Adjust '3' based on how many cards you want in the first row */
+.grid-cell > .character-card:nth-child(-n+6) { /* Adjust '3' based on how many cards you want in the first row */
   margin-top: 30px; /* Change this value to your desired top margin */
 }
 
 .tier-T0 {
-  background-color: #ef5350; /* Example color for T0 */
+  background-color: #f75451; /* Example color for T0 */
 }
 
 .tier-T0_5 {
@@ -261,7 +268,7 @@ body {
 }
 
 .tier-T1 {
-  background-color: #ffa967; /* Example color for T1 */
+  background-color: #ff9a67; /* Example color for T1 */
 }
 
 .tier-T2 {
@@ -269,22 +276,27 @@ body {
 }
 
 .tier-T3 {
-  background-color: #9df89d; /* Example color for T3 */
+  background-color: #f2ff81; /* Color for Tier T5 */
 }
 
 .tier-T4 {
-  background-color: #76f8f8; /* Example color for T4 */
+  background-color: #9df8a6; /* Example color for T3 */
 }
 
 .tier-T5 {
-  background-color: #a666b2; /* Color for Tier T5 */
+  background-color: #76f8ef; /* Example color for T4 */
+}
+
+.tier-T6 {
+  background-color: #76c6f8; /* Example color for T4 */
 }
 
 .tier-heading {
   color: black; /* Text color for all tier headings */
   font-weight: bolder; /* Bold text for all tier headings */
   text-align: center;
-  font-size: 24px;   
+  font-size: 16px;   
+  width: 50px;
 }
 
 .tier-list-info {
@@ -619,12 +631,18 @@ body {
 
 /* Base style for tags */
 .character-tag {
-  margin: 5px;
+  display: flex;
+  margin-top: 1px;
   font-size: 9px;
   font-weight: bold;
   border-radius: 4px;
   color: white;
   text-transform: uppercase;
+  flex-direction: column;
+}
+
+.character-tags .character-tag:first-child {
+  margin-top: 5px; /* Adjust this value as needed */
 }
 
 /* Tag-specific styles */
@@ -632,15 +650,18 @@ body {
   color: white; /* Red for AOE */
 }
 
-.tag-buff, .tag-debuff, .tag-shield, .tag-heal, .tag-cc {
+.tag-buff, .tag-debuff, .tag-shield, .tag-heal {
   color: #4caf50; /* Green for Buff */
 }
 
-.tag-cancel .tag-rotation {
+.tag-cancel, .tag-ult {
   color: #f44336; /* Red for Debuff */
 }
 
-.tag-reaction .tag-multirole {
+.tag-coord, .tag-battery, .tag-cc, .tag-taunt {
   color: #2196f3; /* Red for Debuff */
 }
-/* Add more styles for additional tags as needed */
+
+.tag-multirole, .tag-reaction, .tag-tech {
+  color: #ffb700; 
+}

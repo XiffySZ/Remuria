@@ -72,25 +72,25 @@ const TierList = () => {
 
             <div className="grid-cell main-dps">
               {tier.mainDPS.map((character, charIndex) => (
-                <CharacterCard key={charIndex} image={character.image} tags={character.tags} />
+                <CharacterCard key={charIndex} image={character.image} tags={character.tags} overlay={character.overlay} />
               ))}
             </div>
 
             <div className="grid-cell sub-dps">
               {tier.subDPS.map((character, charIndex) => (
-                <CharacterCard key={charIndex} image={character.image} tags={character.tags} />
+                <CharacterCard key={charIndex} image={character.image} tags={character.tags} overlay={character.overlay}/>
               ))}
             </div>
 
             <div className="grid-cell amplifiers">
               {tier.amplifiers.map((character, charIndex) => (
-                <CharacterCard key={charIndex} image={character.image} tags={character.tags} />
+                <CharacterCard key={charIndex} image={character.image} tags={character.tags} overlay={character.overlay}/>
               ))}
             </div>
 
             <div className="grid-cell sustain">
               {tier.sustain.map((character, charIndex) => (
-                <CharacterCard key={charIndex} image={character.image} tags={character.tags} />
+                <CharacterCard key={charIndex} image={character.image} tags={character.tags} overlay={character.overlay}/>
               ))}
             </div>
           </React.Fragment>

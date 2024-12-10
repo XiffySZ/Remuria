@@ -7,8 +7,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  font-size: 12px;
-  width: 200px; /* Width of the sidebar */
+  font-size: 10px;
+  width: 170px; /* Width of the sidebar */
   background-color: #2a2a33; /* Sidebar background color */
   color: #d0bc91;
   height: 100vh; /* Full height */
@@ -64,7 +64,7 @@ body {
 .collapse-btn {
   position: absolute;
   top: 5px;
-  left: 200px;
+  left: 170px;
   transform: rotate(-360deg);
   background-color: transparent;
   border: none;
@@ -94,7 +94,7 @@ body {
   width: 1px;
   height: 50px; /* Adjust height as needed */
   background-color: #d0bc91; /* Line color */
-  margin: 184px; /* Add spacing between the title and button */
+  margin: 154px; /* Add spacing between the title and button */
 }
 
 .divider.collapsed{
